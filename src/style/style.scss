@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Roboto&family=Outfit&family=Open+Sans&family=Poppins&display=swap');
+$wine: #722f37;
+$gold: #ffd700;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: $gold;
+    color: $wine;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-family: 'Jost';
+}
+
+h2,
+h6 {
+    font-family: "Poppins";
+}
+
+h4,
+p {
+    font-family: 'Jost';
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Jost';
+}
+
+button {
+    background: none;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Jost';
+    padding: .6rem 1rem;
+    cursor: pointer;
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://source.unsplash.com/376KN_ISplE);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    height: 90vh;
+    padding: 2rem 0;
+    h2 {
+        font-size: 3rem;
+        text-transform: capitalize;
+        width: 70%;
+        font-weight: 500;
+    }
+    h6 {
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        margin: 0.2rem 0;
+        font-weight: 600;
+    }
+    .home-text {
+        height: 100%;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.headline {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.btn {
+    border: 1px solid $wine;
+    color: $wine;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.aboutus {
+    margin: 1rem 0;
+    padding: 2rem 0;
+}
+
+.offer {
+    padding: 2rem 0;
+    .offers-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin: 1rem 0;
+        .box {
+            padding: 1rem;
+            transition: all 0.4s ease;
+            border-radius: 5px;
+            border: 2px solid $wine;
+            cursor: pointer;
+            svg {
+                font-size: 1.2rem;
+            }
+            h6 {
+                font-size: 1.25rem;
+                text-transform: capitalize;
+                margin: 10px 0;
+            }
+            p {
+                font-size: 1rem;
+                width: 90%;
+            }
+            &:hover {
+                background-color: rgba($color: $wine, $alpha: 0.5);
+                color: $gold;
+                .main-btn {
+                    border: 1px solid $gold;
+                    color: $gold;
+                }
+            }
+        }
+    }
+}
+
+.news {
+    padding: 2rem 0;
+    .blog-card {
+        width: 300px;
+        height: 420px;
+        border: 1px solid $wine;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(0.9);
+            transition: all 0.3s ease;
+        }
+        img {
+            border-radius: 5px 5px 0 0;
+            height: 50%;
+        }
+        .text {
+            padding: 4px 8px;
+            h4 {
+                text-transform: capitalize;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .flex {
+                font-size: 0.7rem;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.swiper {
+    margin-top: 1rem;
+    width: 100%;
+    height: 470px;
+    .swiperslide {
+        width: auto;
+    }
+    .swiper-pagination-bullet-active {
+        background: $wine;
+    }
+}
+
+footer {
+    color: $gold;
+    background: $wine;
+    .footer {
+        padding: 3rem 0 1rem;
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 10px 0;
+            ul {
+                flex-direction: column;
+                gap: 0.4rem;
+                text-transform: capitalize;
+            }
+            h6 {
+                text-transform: uppercase;
+                margin: 10px 0;
+                font-size: 1rem;
+            }
+        }
+        .copy {
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home {
+        h2 {
+            font-size: 2.25rem;
+            width: 90%;
+        }
+        h6 {
+            font-size: 0.7rem;
+        }
+    }
+    .grid {
+        grid-template-columns: 100%;
+    }
+    .offer {
+        .offers-cont {
+            grid-template-columns: 100%;
+        }
+    }
+    footer {
+        .footer {
+            .footer-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        .footer {
+            .footer-links {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
