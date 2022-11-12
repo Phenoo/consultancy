@@ -80,7 +80,7 @@ const News = () => {
                           Lorem ipsum dolor sit amet consectetur adipisicing elit periam unde officiis ex ab voluptate.
                         </p>
                         <button className="btn">
-                        <Link to='/services'>
+                        <Link to='/blogs'>
                           read more
                         </Link>
                         </button>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Roboto&family=Outfit&family=Open+Sans&family=Poppins&display=swap');
 $wine: #722f37;
-$gold: #ffd700;
+$gold: #c9ad0b;
 *,
 *::before,
 *::after {
@@ -33,9 +33,12 @@ h6 {
     font-family: "Poppins";
 }
 
-h4,
-p {
+h4 {
     font-family: 'Jost';
+}
+
+p {
+    font-family: 'DM Sans';
 }
 
 img {
@@ -47,6 +50,13 @@ a {
     text-decoration: none;
     color: inherit;
     font-family: 'Jost';
+}
+
+input,
+textarea {
+    background: none;
+    border: none;
+    outline: none;
 }
 
 button {
@@ -69,6 +79,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 1rem 0;
     }
     ul {
         gap: 1rem;
@@ -84,7 +95,7 @@ nav {
 }
 
 .home {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://source.unsplash.com/376KN_ISplE);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://source.unsplash.com/376KN_ISplE);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,7 +131,7 @@ nav {
 .headline {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 500;
     text-decoration: underline;
 }
@@ -177,34 +188,35 @@ nav {
 
 .news {
     padding: 2rem 0;
-    .blog-card {
-        width: 300px;
-        height: 420px;
-        border: 1px solid $wine;
-        border-radius: 5px;
-        cursor: pointer;
+}
+
+.blog-card {
+    width: 300px;
+    height: 420px;
+    border: 1px solid $wine;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(0.9);
         transition: all 0.3s ease;
-        &:hover {
-            transform: scale(0.9);
-            transition: all 0.3s ease;
+    }
+    img {
+        border-radius: 5px 5px 0 0;
+        height: 50%;
+    }
+    .text {
+        padding: 4px 8px;
+        h4 {
+            text-transform: capitalize;
+            margin-bottom: 8px;
         }
-        img {
-            border-radius: 5px 5px 0 0;
-            height: 50%;
+        p {
+            font-size: 0.9rem;
         }
-        .text {
-            padding: 4px 8px;
-            h4 {
-                text-transform: capitalize;
-                margin-bottom: 8px;
-            }
-            p {
-                font-size: 0.9rem;
-            }
-            .flex {
-                font-size: 0.7rem;
-                margin-bottom: 8px;
-            }
+        .flex {
+            font-size: 0.7rem;
+            margin-bottom: 8px;
         }
     }
 }
@@ -298,6 +310,202 @@ footer {
 
 .instagram {
     background-color: #d357aa;
+}
+
+///scrollup
+.fixed {
+    position: fixed;
+}
+
+.scrollup {
+    width: 2.75rem;
+    height: 2.75rem;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: $gold;
+    color: $wine;
+    border: 1px solid $wine;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:active {
+        transform: scale(0.8);
+    }
+}
+
+/////about//////////////////////
+/// 
+.about-page {
+    margin-top: 3rem;
+    h2 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 1.4rem;
+    }
+}
+
+.team {
+    .headline {
+        text-align: center;
+    }
+    margin: 2rem 0;
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
+    }
+    .item {
+        background: #fff;
+        border-radius: 10px;
+        width: 270px;
+        .text {
+            padding: 10px;
+        }
+        h4 {
+            font-size: 1.3rem;
+            text-transform: capitalize;
+        }
+        h6 {
+            text-transform: uppercase;
+        }
+        img {
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}
+
+/////Contact//////////////////////
+.contact-page {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://source.unsplash.com/aK0EmfPuktA);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 2rem 0;
+    .question {
+        h4 {
+            text-transform: capitalize;
+            font-size: 1.4rem;
+        }
+        ul {
+            flex-direction: column;
+            font-size: 1.2rem;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+    }
+    .form-container {
+        background: #fff;
+        color: $wine;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 2rem 0;
+        .headline {
+            text-align: center;
+            margin: 0;
+        }
+        p {
+            text-align: center;
+            font-size: 1rem;
+        }
+        .btn {
+            background: $wine;
+            color: $gold
+        }
+        .form-input {
+            margin: 1rem;
+            input,
+            textarea {
+                width: 90%;
+                border: 1px solid $wine;
+                padding: 1rem;
+                border-radius: 15px;
+                &::placeholder {
+                    color: $wine;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 4rem 0 2rem;
+        svg {
+            font-size: 1.4rem;
+        }
+        h6 {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.blob {
+    width: 120px;
+    height: 120px;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    background: $wine;
+    color: $gold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+    }
+}
+
+.trial {
+    border-top: 1px solid $wine;
+    border-bottom: 1px solid $wine;
+}
+
+.give-trial {
+    margin: 4rem auto 2rem;
+    p {
+        font-size: 1.4rem;
+    }
+    .gold {
+        font-weight: 800;
+    }
+}
+
+/////blog//////////////////////
+.blogs {
+    margin-top: 3rem;
+    .headline {
+        margin: 0;
+    }
+    h6 {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+    .blog-cont {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 800px) {

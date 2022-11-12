@@ -8,7 +8,7 @@ import Img1 from '../assets/certify.png'
 const Navigation = () => {
   const [navbar, setNavbar] = useState(false)
   return (
-    <nav>
+    <nav id="nav">
         <section>
           <header>
             <Logo />
@@ -30,7 +30,7 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to='/blog'>
+                  <Link to='/blogs'>
                     blog
                   </Link>
                 </li>
