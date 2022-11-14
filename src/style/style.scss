@@ -40,6 +40,7 @@ h4 {
 
 p {
     font-family: 'DM Sans';
+    font-size: 1rem;
 }
 
 img {
@@ -77,6 +78,7 @@ section {
 }
 
 nav {
+    z-index: 100;
     .active {
         color: $gold;
     }
@@ -96,6 +98,10 @@ nav {
     }
 }
 
+.logo {
+    z-index: 100;
+}
+
 .mobile {
     display: none;
 }
@@ -107,7 +113,7 @@ nav {
 .home {
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -619,6 +625,9 @@ footer {
     section {
         width: 90%;
     }
+    p {
+        font-size: 0.8rem;
+    }
     nav {
         ul {
             display: none;
@@ -650,8 +659,9 @@ footer {
             ul {
                 display: flex;
                 flex-direction: column;
-                padding: 2rem 2.5rem;
+                padding: 5rem 1rem 1rem;
                 a {
+                    margin-bottom: 1rem;
                     font-size: 1.35rem;
                     color: $gold;
                 }
@@ -706,6 +716,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    p {
+        font-size: 0.7rem;
+    }
     section {
         width: 95%;
     }

@@ -9,7 +9,7 @@ const Home = () => {
             We are a growth & transformation <br/> consulting firm.
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officiis at, consequatur numquam accusantium ipsam incidunt. Neque quidem asperiores impedit, blanditiis consequuntur numquam nihil. Vero aliquid autem nulla deserunt accusamus ratione, nam sapiente dolore, repellat rem, aut dignissimos excepturi dolorum!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsa amet iure mollitia aliquid quam nostrum laboriosam sint! Error, sit!
           </p>
           <button className="button">
             get started
