@@ -1,18 +1,17 @@
 import React from 'react';
 
-import { FaSchool,   FaPeace, FaUserAlt } from 'react-icons/fa'
-import { MdModelTraining } from 'react-icons/md'
+import { FaPeace,  FaBookOpen, FaHandshake, FaUserFriends } from 'react-icons/fa'
 
 const Offer = () => {
   const data = [{
     id: 1,
-    icon: <FaUserAlt />,
+    icon: <FaUserFriends />,
     name: 'trainings',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },
   {
     id: 2,
-    icon: <FaSchool />,
+    icon: <FaBookOpen />,
     name: 'courses',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },{
@@ -22,7 +21,7 @@ const Offer = () => {
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },{
     id: 4,
-    icon: <MdModelTraining />,
+    icon: <FaHandshake />,
     name: 'consultation',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   }

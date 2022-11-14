@@ -36,7 +36,7 @@ const Navigation = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to='/blogs'
+                  <NavLink to='/template'
                     className={({isActive}) => (isActive ? 'active' : '') }
                   >
                     templates

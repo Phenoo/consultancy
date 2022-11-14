@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaBox, FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaTwitter } from 'react-icons/fa'
+import {  FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaTwitter } from 'react-icons/fa'
+import { AiOutlineMail} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 
@@ -79,7 +80,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <span>
-                      <FaBox />
+                      <AiOutlineMail />
                     </span>
                     <span>consulatncy@gmail.com</span>
                   </li>

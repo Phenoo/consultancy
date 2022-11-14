@@ -34,8 +34,10 @@ h6 {
     font-weight: 600;
 }
 
-h4 {
+h4,
+h5 {
     font-family: 'Jost';
+    font-weight: 600;
 }
 
 p {
@@ -107,7 +109,7 @@ nav {
 }
 
 .main-home {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://source.unsplash.com/376KN_ISplE);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://source.unsplash.com/MChSQHxGZrQ);
 }
 
 .home {
@@ -154,9 +156,9 @@ nav {
 }
 
 .headline {
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-transform: capitalize;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
     font-weight: 500;
 }
 
@@ -200,33 +202,26 @@ nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
-        margin: 1rem 0;
+        margin: 2rem 0;
         .box {
-            padding: 1rem;
             transition: all 0.4s ease;
             border-radius: 5px;
-            cursor: pointer;
+            border: 1px solid $wine;
+            padding: 1.5rem 1rem;
             svg {
-                font-size: 1.2rem;
+                color: $wine;
+                font-size: 1.4rem;
             }
             h6 {
                 font-size: 1.15rem;
                 text-transform: uppercase;
-                margin: 10px 0 0;
+                margin: 8px 0;
                 font-weight: 550;
             }
             p {
                 font-size: 1rem;
                 width: 90%;
                 margin: 0 auto;
-            }
-            &:hover {
-                background-color: rgba($color: $wine, $alpha: 0.5);
-                color: $gold;
-                .main-btn {
-                    border: 1px solid $gold;
-                    color: $gold;
-                }
             }
         }
     }
@@ -240,8 +235,7 @@ nav {
     .news-cont {
         width: 90%;
         height: 100%;
-        margin: 0 auto;
-        margin-top: 1rem;
+        margin: 2rem auto;
     }
 }
 
@@ -250,14 +244,25 @@ nav {
     height: 200px;
     display: grid;
     grid-template-columns: 40% 60%;
+    place-items: center;
     gap: 2rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
     .image {
+        position: relative;
+        .border {
+            position: absolute;
+            bottom: 1rem;
+            width: 180px;
+            height: 100%;
+            border: 1px solid $wine;
+            z-index: -1;
+        }
         img {
-            width: 100%;
-            border-radius: 5px 5px 0 0;
+            width: 90%;
+            padding-left: 2rem;
+            border-radius: 5px;
             object-fit: cover;
         }
     }
@@ -281,10 +286,10 @@ nav {
 .swiper {
     margin-top: 1rem;
     width: 100%;
-    height: 400px;
+    height: 270px;
     .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
     }
     .swiper-pagination-bullet-active {
         background: $gold;
@@ -292,6 +297,7 @@ nav {
 }
 
 .teamswiper {
+    height: 300px;
     .swiperslide {
         width: auto;
     }
@@ -340,6 +346,7 @@ footer {
         .footer-links {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
             margin: 10px 0;
             ul {
                 flex-direction: column;
@@ -377,7 +384,7 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     margin-top: 3rem;
-    padding: 10px;
+    padding: 1rem;
     font-weight: 800;
 }
 
@@ -447,7 +454,7 @@ footer {
         .item {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
             p {
                 width: 85%;
                 margin: 0 auto;
@@ -471,6 +478,8 @@ footer {
             }
         }
         .item {
+            border: 1px solid $wine;
+            padding: 1.5rem 1rem;
             svg {
                 color: $wine;
             }
@@ -498,7 +507,7 @@ footer {
     .item {
         background: #fff;
         border-radius: 5px;
-        width: 290px;
+        width: 250px;
         border: 1px solid $wine;
         .text {
             padding: 10px;
@@ -533,16 +542,17 @@ footer {
     }
     .courses-cont {
         .wrap {
+            width: 100%;
             display: flex;
-            gap: 1rem;
             flex-wrap: wrap;
+            gap: 1rem;
             align-items: center;
             justify-content: center;
             margin-top: 2rem;
         }
         .item {
             width: 250px;
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -564,6 +574,11 @@ footer {
             }
         }
     }
+}
+
+/////Template//////////////////////
+.template {
+    height: 100vh;
 }
 
 /////Contact//////////////////////
@@ -690,10 +705,8 @@ footer {
     .grid {
         grid-template-columns: 100%;
     }
-    .offer {
-        .offers-cont {
-            grid-template-columns: 100%;
-        }
+    .blog-card {
+        grid-template-columns: 100%;
     }
     footer {
         .footer {
@@ -701,6 +714,9 @@ footer {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+    }
+    .headline {
+        font-size: 1.75rem;
     }
 }
 
@@ -722,9 +738,15 @@ footer {
     section {
         width: 95%;
     }
+    nav {
+        header {
+            padding: 10px 0;
+        }
+    }
     .home {
+        height: 75vh;
         h2 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             width: 100%;
         }
         h6 {
@@ -736,12 +758,31 @@ footer {
             line-height: 1rem;
         }
     }
+    .swiper {
+        height: 400px;
+    }
+    .teamswiper {
+        height: 300px;
+    }
     .fourgrid {
         grid-template-columns: 100%;
+    }
+    .headline {
+        font-size: 1.5rem;
     }
     .about-page {
         .about-vision {
             .item {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .offer {
+        .offers-cont {
+            grid-template-columns: 100%;
+            .box {
                 p {
                     width: 100%;
                 }

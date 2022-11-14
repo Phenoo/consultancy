@@ -25,18 +25,6 @@ const AboutGrid = () => {
     name: 'consultation',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },
-  {
-    id: 5,
-    icon: <MdModelTraining />,
-    name: 'consultation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },
-  {
-    id: 6,
-    icon: <MdModelTraining />,
-    name: 'consultation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  }
   ]
   return (
     <div className="about-grid">

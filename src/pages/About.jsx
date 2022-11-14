@@ -4,10 +4,16 @@ import AboutGrid from '../components/AboutGrid'
 import AboutVision from '../components/AboutVision'
 import Story from '../components/Story'
 import Team from '../components/Team'
+import Helmet from 'react-helmet'
 
 const About = () => {
   return (
     <div className='about-page'>
+      <Helmet>
+        <title>
+          Gold Sycamore | About
+        </title>
+      </Helmet>
       <AboutHome />
       <section>
         <div className="who">
