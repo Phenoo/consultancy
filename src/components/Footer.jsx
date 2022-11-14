@@ -9,52 +9,64 @@ const Footer = () => {
       <div className="footer">
         <section>
           <div className="footer-container">
-            <Logo />
+            <div className="footer-desc">
+              <Logo />
+              <p>
+                We specialize in providing clarity for small business owners so that their business can grow.
+              </p>
+              <div className="social">
+                <ul>
+                    <li className="facebook">
+                      <FaFacebook />
+                    </li>
+                    <li className="instagram">
+                      <FaInstagram />
+                    </li>
+                    <li className="twitter">
+                      <FaTwitter />
+                    </li>
+                    <li className="linkedin">
+                      <FaLinkedinIn />
+                    </li>
+                </ul>
+              </div>
+            </div>
             <div className="footer-links">
               <div className="foot">
-                <h6>quick links</h6>
+                <h6>Company</h6>
                 <ul>
                   <li>
-                    <Link to='/'>
-                      home
+                    <Link to='/about'>
+                      about us
                     </Link>
                   </li>
+                  <li>
+                    <Link to='/contact'>
+                      contact us
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="foot">
+                <h6>
+                  resources
+                </h6>
+                <ul>
                   <li>
                     <Link to='/services'>
                       services
                     </Link>
                   </li>
                   <li>
-                    <Link to='/blog'>
-                      about
+                    <Link to='/template'>
+                      templates
                     </Link>
                   </li>
-                  <li>
-                    <Link to='/about'>
-                      blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to='/contact'>
-                      contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="foot">
-                <h6>
-                  why us?
-                </h6>
-                <ul>
-                  <li>Professionalism</li>
-                  <li>Quality Assurance</li>
-                  <li>Global Best Practices</li>
-                  <li>vast experience</li>
                 </ul>
               </div>
               <div className="foot foot-mail">
                 <h6>
-                  contact us
+                  contacts
                 </h6>
                 <ul>
                   <li>
@@ -73,31 +85,12 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="foot social">
-                <h6>
-                  connect with us on social media:
-                </h6>
-                <ul>
-                  <li className="facebook">
-                    <FaFacebook />
-                  </li>
-                  <li className="instagram">
-                    <FaInstagram />
-                  </li>
-                  <li className="twitter">
-                    <FaTwitter />
-                  </li>
-                  <li className="linkedin">
-                    <FaLinkedinIn />
-                  </li>
-                </ul>
-              </div>
             </div>
-            <p className='copy'>
-              copyright &copy; lampnets co ltd 2022. all rights reserved.
-            </p>
           </div>
         </section>
+        <p className='copy'>
+              &copy; copyright 2022 gold sycamore limited. all rights reserved.
+          </p>
       </div>
     </footer>
   )

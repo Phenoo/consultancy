@@ -1,5 +1,12 @@
 import React from 'react'
 
+import { Pagination } from 'swiper'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+
+
 import Img1 from '../assets/Lawyer1.webp'
 
 const Team = () => {
@@ -30,31 +37,41 @@ const Team = () => {
   return (
     <div className='team'>
       <h4 className="headline">
-        leadership team
+        meet the team
       </h4>
       <div className="team-container">
-        {
+      <Swiper
+            modules={[Pagination]}
+            spaceBetween={30}
+            loop={true}
+            slidesPerView={'auto'}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            className="teamswiper"
+          >
+                    {
           data.map((item) => {
             return (
-              <div className="item">
-                <div className="img">
-                  <img src={Img1} alt="teaam" />
+              <SwiperSlide key={item.id} className="swiperslide">
+                <div className="item">
+                  <div className="img">
+                    <img src={Img1} alt="teaam" />
+                  </div>
+                  <div className="text">
+                    <h4>
+                      {item.title}
+                    </h4>
+                    <h6>
+                      {item.name}
+                    </h6>
+                  </div>
                 </div>
-                <div className="text">
-                  <h4>
-                    {item.title}
-                  </h4>
-                  <h6>
-                    {item.name}
-                  </h6>
-                  <button className="btn">
-                    email
-                  </button>
-                </div>
-              </div>
+              </SwiperSlide>
             )
           })
         }
+          </Swiper>
       </div>
 
     </div>

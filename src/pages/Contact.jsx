@@ -1,25 +1,16 @@
 import React from 'react'
 import FormComponents from '../components/FormComponents'
-import Question from '../components/Question'
 
-import {GoLocation} from 'react-icons/go'
+import ContactHome from '../components/ContactHome'
+import Location from '../components/Location'
 
 const Contact = () => {
   return (
     <div className='contact-page'>
+      <ContactHome />
       <section>
-        <Question />
         <FormComponents />
-        <div className="location">
-          <span>
-            <GoLocation />
-          </span>
-          <span>
-            <h6>
-              Lekki, 21 Pitt Street, Auckland 1010, Australia, QLD 4006.
-            </h6>
-          </span>
-        </div>
+        <Location />
       </section>
     </div>
   )

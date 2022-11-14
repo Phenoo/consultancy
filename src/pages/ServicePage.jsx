@@ -1,8 +1,13 @@
 import React from 'react'
+import ServiceHome from '../components/ServiceHome'
+import ServiceOffer from '../components/ServiceOffer'
 
 const ServicePage = () => {
   return (
-    <div>ServicePage</div>
+    <div className="service-page">
+      <ServiceHome />
+      <ServiceOffer />
+    </div>
   )
 }
 

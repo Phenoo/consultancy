@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 
 import { FaSchool,   FaPeace, FaUserAlt } from 'react-icons/fa'
 import { MdModelTraining } from 'react-icons/md'
@@ -35,7 +34,9 @@ const Offer = () => {
         <h4 className='headline'>
           what we  offer
         </h4>
-
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum molestias nihil non? Maxime aut rem omnis alias inventore.
+        </p>
         <ul className="offers-cont">
           {
             data.map((item, index )=> (
@@ -43,11 +44,6 @@ const Offer = () => {
                 <span>{item.icon}</span>
                 <h6>{item.name}</h6>
                 <p>{item.desc}</p>
-                <button className='btn'>
-                  <Link to='/services'>
-                    read more
-                  </Link>
-                </button>
               </li>
             ))
           }

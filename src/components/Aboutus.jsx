@@ -8,24 +8,32 @@ const Aboutus = () => {
       <section>
         <div className='grid'>
           <div>
-            <h4 className='headline'>
+            <img src={Img1} alt='about' />
+          </div>
+          <div>
+            <button className='tag'>
               about us
+            </button>
+            <h4 className="headline">
+              providing clarity for business growth
             </h4>
             <p>
             Lorem ipsum star lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impeditvvvv.
             </p>
-            <br/>
             <p>
             Lorem ipsum star lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impeditvvvv.
             </p>
-            <br/>
-            <br/>
             <p>
             Lorem ipsum star lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impeditvvvv.
             </p>
-          </div>
-          <div>
-            <img src={Img1} alt='about' />
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repudiandae at eveniet veniam? Quod recusandae exercitationem quis eius! Sint, corporis ad architecto beatae reprehenderit velit adipisci quam necessitatibus quas dignissimos.
+            </p>
+            <br />
+            <button className="button">
+              learn more
+            </button>
           </div>
         </div>
       

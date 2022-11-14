@@ -7,7 +7,6 @@ import ServicePage from "./pages/ServicePage";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 
-import Givetrial from './components/Givetrial'
 import ScrollUp from "./components/ScrollUp";
 
 
@@ -19,10 +18,9 @@ function App() {
         <Route exact path='/' element={<Main />}/>
         <Route path='/about' element={<About /> } />
         <Route path='/contact' element={<Contact /> } />
-        <Route path='/service' element={<ServicePage /> } />
+        <Route path='/services' element={<ServicePage /> } />
         <Route path='/blogs' element={<Blogs /> } />
       </Routes>
-      <Givetrial />
       <ScrollUp />
       <Footer />
     </>
