@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Roboto&family=Outfit&family=Open+Sans&family=Poppins&display=swap');
-$wine: #722f37;
-$gold: #c9ad0b;
+$wine: #c32266;
+$gold: #dbad52;
 *,
 *::before,
 *::after {
@@ -28,10 +28,13 @@ ul {
     font-family: 'Jost';
 }
 
-h2,
-h6 {
+h2 {
     font-family: "Poppins";
     font-weight: 600;
+}
+
+h6 {
+    font-family: 'DM Sans';
 }
 
 h4,
@@ -110,11 +113,11 @@ nav {
 }
 
 .main-home {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://source.unsplash.com/rxpThOwuVgE);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../assets/bg4.jpeg);
 }
 
 .home {
-    background-position: 50%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -200,18 +203,18 @@ nav {
     align-items: center;
     text-align: center;
     .offers-cont {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
         margin: 2rem 0;
         .box {
+            width: 270px;
             transition: all 0.4s ease;
-            border-radius: 5px;
-            border: 1px solid $wine;
-            padding: 1.5rem 1rem;
-            svg {
-                color: $wine;
-                font-size: 1.4rem;
+            img {
+                height: 290px;
+                object-fit: cover;
+                border-radius: 5px;
             }
             h6 {
                 font-size: 1.15rem;
@@ -421,7 +424,7 @@ footer {
 /// 
 .about-page {
     .about-home {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://source.unsplash.com/Y5bvRlcCx8k);
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/bg.jpeg);
     }
     h2 {
         font-size: 2rem;
@@ -530,7 +533,7 @@ footer {
 /////Service//////////////////////
 .service-page {
     .service-home {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://source.unsplash.com/JaoVGh5aJ3E);
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/right.jpg);
     }
     img {
         object-fit: cover;
@@ -583,13 +586,15 @@ footer {
 }
 
 /////Contact//////////////////////
+/// 
+.contact-home {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets//bg2.jpeg);
+}
+
 .contact-page {
     background: #f9f9f9;
     .grid {
         place-items: center;
-    }
-    .contact-home {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://source.unsplash.com/sggw4-qDD54);
     }
     p {
         margin: 10px 0;
@@ -637,7 +642,7 @@ footer {
 }
 
 /////blog//////////////////////
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     section {
         width: 90%;
     }
@@ -645,13 +650,8 @@ footer {
         font-size: 0.8rem;
     }
     nav {
-        ul {
+        .menulist {
             display: none;
-        }
-        .menulsit {
-            ul {
-                display: none;
-            }
         }
         .show {
             background-color: #fff;
@@ -663,6 +663,7 @@ footer {
             top: 0;
             bottom: 0;
             width: 100vw;
+            display: flex;
             transform: translateY(0%);
             z-index: 10;
             touch-action: none;
@@ -683,6 +684,14 @@ footer {
                 }
             }
         }
+        .button {
+            text-align: center;
+            margin: 1rem;
+            width: 125px;
+        }
+    }
+    .none {
+        display: none;
     }
     .mobile {
         display: flex;

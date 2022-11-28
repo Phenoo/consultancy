@@ -50,7 +50,13 @@ const Navigation = () => {
                   </NavLink>
                 </li>
               </ul>
+              <button className='button mobile'>
+                get started
+              </button>
             </div>
+            <button className='button none'>
+              get started
+            </button>
             <button className='mobile' onClick={() => setNavbar(!navbar)}>
               {
                 navbar ? <FaTimes /> : <FaBars />

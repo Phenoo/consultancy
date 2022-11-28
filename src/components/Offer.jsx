@@ -1,27 +1,30 @@
 import React from 'react';
 
-import { FaPeace,  FaBookOpen, FaHandshake, FaUserFriends } from 'react-icons/fa'
+import Img1 from '../assets/offer1.png'
+import Img2 from '../assets/graph.jpg'
+import Img3 from '../assets/train.png'
+import Img4 from '../assets/item4.jpeg'
 
 const Offer = () => {
   const data = [{
     id: 1,
-    icon: <FaUserFriends />,
+    icon: Img1,
     name: 'trainings',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },
   {
     id: 2,
-    icon: <FaBookOpen />,
+    icon: Img2,
     name: 'courses',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },{
     id:3,
-    icon: <FaPeace />,
+    icon: Img3,
     name: 'coaching',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },{
     id: 4,
-    icon: <FaHandshake />,
+    icon: Img4,
     name: 'consultation',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   }
@@ -40,7 +43,9 @@ const Offer = () => {
           {
             data.map((item, index )=> (
               <li className="box" key={index}>
-                <span>{item.icon}</span>
+                <span>
+                  <img src={item.icon} alt='offer' />
+                </span>
                 <h6>{item.name}</h6>
                 <p>{item.desc}</p>
               </li>

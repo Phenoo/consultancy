@@ -1,10 +1,8 @@
-import React from 'react'
-
+import Img1 from '../assets/story.png'
 const Story = () => {
   return (
     <div className="about-story">
       <div className="grid">
-        <div className="image"></div>
         <div className="text">
           <h4 className="headline">
             our story
@@ -16,6 +14,9 @@ const Story = () => {
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum, ratione ipsum esse aut vel quasi a quod explicabo hic.
           </p>
+        </div>
+        <div className="image">
+          <img src={Img1} alt='stroy' />
         </div>
       </div>
     </div>

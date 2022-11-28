@@ -1,27 +1,32 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa'
 
-import Img1 from '../assets/item.jpeg'
-import Img2 from '../assets/item2.jpeg'
-import Img3 from '../assets/Lawyer1.webp'
 
+import Img1 from '../assets/offer1.png'
+import Img2 from '../assets/graph.jpg'
+import Img3 from '../assets/train.png'
+import Img4 from '../assets/item4.jpeg'
 
 const ServiceOffer = () => {
   const data = [{
     id: 1,
+    image: Img1,
     name: 'trainings',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },
   {
     id: 2,
+    image: Img2,
     name: 'courses',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },{
     id:3,
+    image: Img3,
     name: 'coaching',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   },{
     id: 4,
+    image: Img4,
     name: 'consultation',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
   }
@@ -108,6 +113,25 @@ const ServiceOffer = () => {
             </div>
             <div>
               <img src={Img1} alt="courses" />
+            </div>
+          </div>
+        </article>
+        <article className='article'>
+          <div className='grid'>
+            <div>
+              <img src={Img4} alt='offer' /> 
+            </div>
+            <div>
+              <h4 className="headline">
+                consultation
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe impedit earum neque exercitationem fugit quibusdam autem ratione inventore aperiam, dolore voluptatum distinctio perspiciatis esse nisi debitis sunt suscipit aut fugiat quidem reprehenderit accusantium natus. Voluptas assumenda, quas alias numquam, sint corrupti nesciunt commodi accusamus quos suscipit sapiente nam natus laborum blanditiis temporibus, ea aliquam! Perspiciatis eos asperiores quam quaerat quo. Dolore, doloribus consequatur neque quaerat quidem temporibus, vitae fugit doloremque illo rem explicabo optio nam in ipsa nihil eaque.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, mollitia. Doloremque optio consequatur accusamus! Quibusdam recusandae qui voluptates delectus optio tenetur perspiciatis, nobis vitae magnam dolor, iure corrupti autem dolores!
+              </p>
             </div>
           </div>
         </article>

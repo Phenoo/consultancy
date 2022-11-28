@@ -25,7 +25,7 @@ const AboutVision = () => {
               <BsGlobe />
             </div>
             <h5 className="tophead">
-              our mission
+              our vision
             </h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et quidem soluta cupiditate quisquam, iste a quae accusantium natus quis officia corporis dolore voluptates sed. Mollitia aut sapiente a rerum

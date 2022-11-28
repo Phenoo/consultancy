@@ -1,6 +1,8 @@
 import React from 'react'
 import {GoLocation} from 'react-icons/go'
 
+import Img1 from '../assets/map.png'
+
 const Location = () => {
   return (
     <div>
@@ -20,7 +22,9 @@ const Location = () => {
             </span>
           </div>
         </div>
-        <div></div>
+        <div>
+          <img src={Img1} alt='map' />
+        </div>
       </div>
     </div>
   )
