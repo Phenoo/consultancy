@@ -44,7 +44,7 @@ const News = () => {
     },
     {
       id: 5,
-      name: 'home to make crazy sales weekly',
+      name: 'mike daniel',
       svg: User1,
       job: 'sales',
       company: 'distro ng'
