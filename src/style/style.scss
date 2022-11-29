@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     background: #fff;
     color: #111;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 ul {
@@ -29,17 +29,21 @@ ul {
     gap: 10px;
 }
 
-h2 {
-    font-weight: 600;
-}
-
-h6 {
-    font-family: 'Inter';
-}
-
+h1,
+h2,
+h3,
 h4,
-h5 {
-    font-weight: 600;
+h5,
+h6,
+p,
+button,
+span,
+div,
+input,
+label,
+a,
+li {
+    font-family: 'Inter';
 }
 
 p {
@@ -112,12 +116,22 @@ nav {
 
 .main-home {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../assets/homebg.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 90vh;
+    padding: 2rem 0;
 }
 
 .home {
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +176,6 @@ nav {
     font-size: 2rem;
     text-transform: capitalize;
     margin: 0.8rem 0;
-    font-weight: 500;
 }
 
 .tag {
@@ -409,7 +422,7 @@ footer {
     font-size: 0.8rem;
     margin-top: 3rem;
     padding: 1rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 ///scrollup
@@ -612,25 +625,30 @@ footer {
         }
         .item {
             width: 250px;
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3), 0 3px 7px 0 rgba(0, 0, 0, 0.3);
             cursor: pointer;
             transition: all 0.3s ease;
             &:hover {
                 transform: scale(0.9);
                 transition: all 0.3s ease;
             }
-            img {
-                border-radius: 10px 10px 0 0;
-            }
             .text {
-                padding: 10px;
+                padding: 1rem 10px;
+                h4 {
+                    font-size: 1.2rem;
+                }
             }
             .flex {
                 display: flex;
                 align-items: center;
                 gap: 5px;
                 margin-top: 1rem;
+                svg {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -809,7 +827,7 @@ footer {
     .headline {
         font-size: 1.75rem;
     }
-    .swiper {
+    .mySwiper {
         min-height: 500px;
     }
 }
@@ -852,19 +870,28 @@ footer {
             line-height: 1rem;
         }
     }
+    .button {
+        padding: 0.7rem 1rem;
+        font-size: 0.8rem;
+    }
     .swiper {
         height: 400px;
     }
-    .teamswiper {
-        height: 300px;
-    }
     .fourgrid {
         grid-template-columns: 100%;
+    }
+    .grid {
+        margin: 1rem 0;
     }
     .headline {
         font-size: 1.5rem;
     }
     .about-page {
+        .about-story {
+            p {
+                line-height: 1rem;
+            }
+        }
         .about-vision {
             .item {
                 p {
@@ -876,10 +903,22 @@ footer {
     .offer {
         .offers-cont {
             grid-template-columns: 100%;
+            gap: 2rem;
             .box {
+                margin: 1rem 0;
+                img {
+                    width: 100%;
+                }
                 p {
                     width: 100%;
                 }
+            }
+        }
+    }
+    .service-page {
+        .article {
+            p {
+                line-height: 1rem;
             }
         }
     }
