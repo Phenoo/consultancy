@@ -36,10 +36,10 @@ const Navigation = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to='/template'
+                  <NavLink to='/blogs'
                     className={({isActive}) => (isActive ? 'active' : '') }
                   >
-                    templates
+                    blogs
                   </NavLink>
                 </li>
                 <li>

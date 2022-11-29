@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <div className="logo">
       <h4>
-        G SYCAMORE
+          LOGO
       </h4>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import ServiceHome from '../components/ServiceHome'
-import ServiceOffer from '../components/ServiceOffer'
+import ServiceHome from '../components/Services/ServiceHome'
+import ServiceOffer from '../components/Services/ServiceOffer'
 
 const ServicePage = () => {
   return (

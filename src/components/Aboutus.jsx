@@ -1,5 +1,5 @@
 import React from 'react'
-import Img1 from '../assets/Lawyer1.webp'
+import Img1 from '../assets/aboutus.webp'
 
 
 const Aboutus = () => {
@@ -18,13 +18,7 @@ const Aboutus = () => {
               providing clarity for business growth
             </h4>
             <p>
-            Lorem ipsum star lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impeditvvvv.
-            </p>
-            <p>
-            Lorem ipsum star lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impeditvvvv.
-            </p>
-            <p>
-            Lorem ipsum star lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impedit eveniet ipsam quasi impeditvvvv.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestias pariatur atque quam ad deserunt itaque veritatis eveniet, praesentium accusantium maiores quis cum expedita vel, debitis explicabo perspiciatis iusto eos quibusdam officiis dolores error? Minima harum veniam eum velit autem error! Omnis aliquam tempore asperiores quaerat deleniti possimus voluptate adipisci, sapiente expedita, quos odit maxime ratione, nisi illo repellat nihil incidunt quia doloremque? Assumenda similique vel earum eveniet delectus rerum id, minus quidem. Odio ex placeat minima, doloribus consequatur optio facere quam nihil commodi vitae ullam cumque doloremque vero a eos, magnam quidem labore odit. Quisquam labore itaque cupiditate magnam.
             </p>
             <br />
             <p>

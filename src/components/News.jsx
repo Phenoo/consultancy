@@ -7,10 +7,10 @@ import 'swiper/css/pagination'
 
 
 
-import User2 from '../assets/right.jpg'
-import User3 from '../assets/lawyer5.jpeg'
-import User4 from '../assets/shelf.jpeg'
-import User1 from '../assets/lawyer7.jpeg'
+import User1 from '../assets/client.webp'
+import User2 from '../assets/client.webp'
+import User3 from '../assets/client.webp'
+import User4 from '../assets/client.webp'
 
 const News = () => {
   const Items = [

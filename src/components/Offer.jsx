@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Img1 from '../assets/offer1.png'
-import Img2 from '../assets/graph.jpg'
-import Img3 from '../assets/train.png'
-import Img4 from '../assets/item4.jpeg'
+import Img1 from '../assets/train.webp'
+import Img2 from '../assets/courses.webp'
+import Img3 from '../assets/coach.webp'
+import Img4 from '../assets/consult.webp'
 
 const Offer = () => {
   const data = [{

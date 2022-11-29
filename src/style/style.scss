@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Roboto&family=Outfit&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Roboto&family=Inter&family=Open+Sans&family=Poppins&display=swap');
 $wine: #c32266;
 $gold: #dbad52;
 *,
@@ -6,6 +6,7 @@ $gold: #dbad52;
 *::after {
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
 }
 
 html {
@@ -19,44 +20,41 @@ body {
     overflow-x: hidden;
     background: #fff;
     color: #111;
+    font-family: "Inter", sans-serif;
 }
 
 ul {
     list-style: none;
     display: flex;
     gap: 10px;
-    font-family: 'Jost';
 }
 
 h2 {
-    font-family: "Poppins";
     font-weight: 600;
 }
 
 h6 {
-    font-family: 'DM Sans';
+    font-family: 'Inter';
 }
 
 h4,
 h5 {
-    font-family: 'Jost';
     font-weight: 600;
 }
 
 p {
-    font-family: 'DM Sans';
     font-size: 1rem;
 }
 
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    font-family: 'Jost';
 }
 
 input,
@@ -70,7 +68,6 @@ button {
     background: none;
     border: none;
     text-transform: capitalize;
-    font-family: 'Jost';
     padding: .6rem 1rem;
     cursor: pointer;
     display: flex;
@@ -78,7 +75,7 @@ button {
 }
 
 section {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -98,7 +95,7 @@ nav {
         gap: 1rem;
     }
     a {
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-size: 1.25rem;
     }
 }
@@ -113,13 +110,13 @@ nav {
 }
 
 .main-home {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../assets/bg4.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../assets/homebg.webp);
 }
 
 .home {
-    background-position: center;
+    background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,7 +153,8 @@ nav {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
+    margin: 3rem 0;
 }
 
 .headline {
@@ -176,13 +174,32 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .button {
     background: $gold;
     color: #fff;
-    padding: 8px 1.2rem;
+    padding: 1rem 1.5rem;
     border-radius: 5px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.3s ease;
+    }
 }
 
 .btn {
@@ -193,8 +210,7 @@ nav {
 }
 
 .aboutus {
-    margin: 1rem 0;
-    padding: 2rem 0;
+    margin: 4rem 0;
 }
 
 .offer {
@@ -292,8 +308,8 @@ nav {
     width: 100%;
     height: 270px;
     .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
     }
     .swiper-pagination-bullet-active {
         background: $gold;
@@ -301,7 +317,7 @@ nav {
 }
 
 .teamswiper {
-    height: 300px;
+    height: 400px;
     .swiperslide {
         width: auto;
     }
@@ -422,10 +438,21 @@ footer {
 
 /////about//////////////////////
 /// 
+.about-home {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/consult.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 90vh;
+    padding: 2rem 0;
+}
+
 .about-page {
-    .about-home {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/bg.jpeg);
-    }
     h2 {
         font-size: 2rem;
     }
@@ -444,6 +471,12 @@ footer {
     }
     .about-story {
         margin: 2rem 0;
+        img {
+            height: 350px;
+        }
+        p {
+            line-height: 1.5rem;
+        }
     }
     .about-vision {
         padding: 3rem 0;
@@ -453,6 +486,7 @@ footer {
         justify-content: center;
         text-align: center;
         .grid {
+            padding: 2rem 0;
             margin-top: 2rem;
         }
         .item {
@@ -471,8 +505,10 @@ footer {
     .about-grid {
         padding: 2rem 0;
         width: 100%;
-        button {
-            margin-top: 2rem;
+        .center {
+            padding: 0;
+            width: 120px;
+            margin: 2rem auto;
         }
         .header {
             margin-bottom: 2rem;
@@ -482,7 +518,6 @@ footer {
             }
         }
         .item {
-            border: 1px solid $wine;
             padding: 1.5rem 1rem;
             svg {
                 color: $wine;
@@ -511,8 +546,8 @@ footer {
     .item {
         background: #fff;
         border-radius: 5px;
-        width: 250px;
-        border: 1px solid $wine;
+        width: 320px;
+        height: 400px;
         .text {
             padding: 10px;
         }
@@ -525,24 +560,41 @@ footer {
             text-transform: uppercase;
         }
         img {
-            border-radius: 5px 5px 0 0;
+            height: 250px;
+            object-position: top;
+            border-radius: 10px;
         }
     }
 }
 
 /////Service//////////////////////
+.service-home {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/servicebg.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 90vh;
+    padding: 2rem 0;
+}
+
 .service-page {
-    .service-home {
-        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/right.jpg);
-    }
     img {
         object-fit: cover;
+        max-height: 350px;
     }
     .service-container {
         padding: 2rem 0;
     }
     .article {
         margin-top: 3rem;
+        p {
+            line-height: 1.7rem;
+        }
     }
     .courses-cont {
         .wrap {
@@ -588,11 +640,22 @@ footer {
 /////Contact//////////////////////
 /// 
 .contact-home {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets//bg2.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/contactbg.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 90vh;
+    padding: 2rem 0;
 }
 
 .contact-page {
     background: #f9f9f9;
+    color: #111;
     .grid {
         place-items: center;
     }
@@ -600,7 +663,7 @@ footer {
         margin: 10px 0;
     }
     .form-container {
-        color: $wine;
+        color: #111;
         padding: 1rem;
         border-radius: 10px;
         margin: 2rem 0;
@@ -616,12 +679,12 @@ footer {
             input,
             textarea {
                 width: 90%;
-                border: 1px solid $wine;
+                border: 1px solid #111;
                 background: #fff;
                 padding: 1rem;
                 margin-top: 5px;
                 &::placeholder {
-                    color: $wine;
+                    color: #111;
                     text-transform: capitalize;
                 }
             }
@@ -642,7 +705,21 @@ footer {
 }
 
 /////blog//////////////////////
-@media screen and (max-width: 850px) {
+.blog-home {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/blogbg.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 90vh;
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 900px) {
     section {
         width: 90%;
     }

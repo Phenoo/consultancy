@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 
 import ScrollUp from "./components/ScrollUp";
+import Blogs from "./pages/Blogs";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/about' element={<About /> } />
         <Route path='/contact' element={<Contact /> } />
         <Route path='/services' element={<ServicePage /> } />
+        <Route path='/blogs' element={<Blogs /> } />
         <Route path='/template' element={<Template /> } />
       </Routes>
       <ScrollUp />

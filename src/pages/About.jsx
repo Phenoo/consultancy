@@ -1,9 +1,9 @@
 import React from 'react'
-import AboutHome from '../components/AboutHome'
-import AboutGrid from '../components/AboutGrid'
-import AboutVision from '../components/AboutVision'
-import Story from '../components/Story'
-import Team from '../components/Team'
+import AboutHome from '../components/About/AboutHome'
+import AboutGrid from '../components/About/AboutGrid'
+import AboutVision from '../components/About/AboutVision'
+import Story from '../components/About/Story'
+import Team from '../components/About/Team'
 import Helmet from 'react-helmet'
 
 const About = () => {
