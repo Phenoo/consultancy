@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Roboto&family=Inter&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Playfair+Display&family=Inter&family=Open+Sans&family=Poppins&display=swap');
 $wine: #c32266;
 $gold: #dbad52;
 *,
@@ -6,7 +6,6 @@ $gold: #dbad52;
 *::after {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
 }
 
 html {
@@ -20,7 +19,6 @@ body {
     overflow-x: hidden;
     background: #fff;
     color: #111;
-    font-family: 'Inter', sans-serif;
 }
 
 ul {
@@ -34,16 +32,18 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
 p,
 button,
 span,
-div,
 input,
 label,
 a,
 li {
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
