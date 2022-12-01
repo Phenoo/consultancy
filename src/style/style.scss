@@ -269,14 +269,14 @@ nav {
     .news-cont {
         width: 90%;
         height: 100%;
-        margin: 2rem auto;
+        margin: 3rem auto;
     }
     img {
         height: 275px;
     }
 }
 
-.blog-card {
+.review-card {
     width: 100%;
     height: 200px;
     display: grid;
@@ -741,6 +741,87 @@ footer {
     padding: 2rem 0;
 }
 
+.article-container {
+    place-items: center;
+}
+
+.blog-card {
+    width: 340px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 7px 10px 0 rgba(0, 0, 0, 0.20);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    &:hover {
+        transform: scale(0.9);
+    }
+    .text {
+        padding: 1rem;
+    }
+    h6,
+    p {
+        color: #808080;
+    }
+    h4 {
+        margin: 1rem 0;
+    }
+    img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    .round {
+        border-radius: 25px;
+        border: 1px solid #111;
+        display: flex;
+        align-items: center;
+    }
+    .active {
+        border: none;
+        background: $gold;
+        color: #fff;
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 2rem auto;
+    form {
+        width: 100%;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    .form-input {
+        border: 1px solid #111;
+        display: flex;
+        justify-content: space-between;
+    }
+    svg {
+        padding-left: 5px;
+    }
+    .button {
+        border-radius: 0;
+    }
+}
+
 @media screen and (max-width: 900px) {
     section {
         width: 90%;
@@ -814,7 +895,7 @@ footer {
     .grid {
         grid-template-columns: 100%;
     }
-    .blog-card {
+    .review-card {
         grid-template-columns: 100%;
     }
     footer {
@@ -885,6 +966,15 @@ footer {
     }
     .headline {
         font-size: 1.5rem;
+    }
+    .blog-card {
+        width: 300px;
+        height: 330px;
+    }
+    .news {
+        .news-cont {
+            width: 100%;
+        }
     }
     .about-page {
         .about-story {

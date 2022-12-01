@@ -2,7 +2,7 @@ import React from 'react'
 import Aboutus from '../components/Aboutus'
 import Article from '../components/Article'
 import Home from '../components/Home'
-import News from '../components/News'
+import Review from '../components/Review'
 import Offer from '../components/Offer'
 
 const Main = () => {
@@ -12,7 +12,7 @@ const Main = () => {
       <Aboutus />
       <Offer />
       <Article />
-      <News />
+      <Review />
     </main>
   )
 }

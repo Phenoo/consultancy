@@ -71,7 +71,7 @@ const News = () => {
               Items.map((item) => {
                 return(
                   <SwiperSlide className="swiperslide" key={item.id}>
-                    <div className="item blog-card">
+                    <div className="item review-card">
                       <div className="image">
                         <div className="border"></div>
                         <img src={item.svg} alt={item.name} />
