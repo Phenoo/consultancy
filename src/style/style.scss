@@ -106,8 +106,13 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     z-index: 100;
-    color: $gold;
+    height: 60px;
+    width: 200px;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
 }
 
 .mobile {
@@ -250,7 +255,6 @@ nav {
                 font-size: 1.15rem;
                 text-transform: uppercase;
                 margin: 8px 0;
-                font-weight: 550;
             }
             p {
                 font-size: 1rem;
@@ -765,7 +769,7 @@ footer {
         color: #808080;
     }
     h4 {
-        margin: 1rem 0;
+        margin: 10px 0;
     }
     img {
         border-radius: 10px 10px 0 0;
