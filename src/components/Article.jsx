@@ -22,10 +22,11 @@ const Article = () => {
       <section>
         <div className="center">
           <h4 className="headline">
-            our latest articles
+            real business insights
           </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fuga voluptatem placeat magni voluptatibus enim eius molestias, veniam doloribus suscipit voluptas, provident tempora optio excepturi.
+            There is something about our business blogs that keeps you glued. 
+            We make business complexities as simple as ABC.
           </p>
         </div>
         <div className="article-container fourgrid">

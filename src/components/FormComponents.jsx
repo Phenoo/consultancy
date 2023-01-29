@@ -12,7 +12,7 @@ const FormComponents = () => {
             Gold Sycamore specialize in providing clarity for owners so that the business can grow.
           </p>
           <a href="mailto:goldsycamore@gmail.com">
-            goldsycamore@gmail.com
+            hello@goldsycamore.com
           </a>
           <p>
             +234 801 2345 678

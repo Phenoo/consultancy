@@ -21,7 +21,9 @@ const About = () => {
             who are we?
           </button>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed atque vitae iusto repudiandae labore accusantium quia, est, quas amet assumenda illum veritatis, quisquam eveniet dolorum vel. Laudantium quisquam, natus sit veniam sapiente odio, iusto velit sunt rerum voluptatibus suscipit!
+          We are a vibrant set of business experts who are committed to growing sustainable businesses. 
+          <br />
+            Like we say among ourselves, “We sleep, breathe and think about business growth all the time”. 
           </p>
         </div>
         <Story />

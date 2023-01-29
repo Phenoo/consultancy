@@ -82,7 +82,7 @@ const Footer = () => {
                     <span>
                       <AiOutlineMail />
                     </span>
-                    <span>consulatncy@gmail.com</span>
+                    <span>hello@goldsycamore.com</span>
                   </li>
                 </ul>
               </div>

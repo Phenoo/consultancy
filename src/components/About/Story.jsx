@@ -11,11 +11,10 @@ const Story = () => {
         </div>
         <div className="text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt adipisci provident debitis quam incidunt nisi rerum illo id impedit vel quasi ab, minima omnis sint tempore. Possimus accusantium ut fugiat earum magni laboriosam quia, quibusdam in suscipit ullam fugit, esse, magnam non deleniti harum doloremque qui alias ratione. Ipsum, fuga.
+            We started off as a social media management brand in 2018;
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum, ratione ipsum esse aut vel quasi a quod explicabo hic.
           </p>
         </div>
 

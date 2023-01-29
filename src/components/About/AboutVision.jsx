@@ -17,7 +17,7 @@ const AboutVision = () => {
               our mission
             </h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nisi, quis eum maiores, perferendis corporis pariatur similique beatae blanditiis, impedit libero magni. Iste itaque temporibus provident nemo cumque rerum incidunt.
+              To arm business owners with strategies that promote sustainable businesses, globally. 
             </p>
           </div>
           <div className="item">
@@ -28,7 +28,7 @@ const AboutVision = () => {
               our vision
             </h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et quidem soluta cupiditate quisquam, iste a quae accusantium natus quis officia corporis dolore voluptates sed. Mollitia aut sapiente a rerum
+              To be the most preferred consulting firm for small businesses in Africa.
             </p>
           </div>
         </div>

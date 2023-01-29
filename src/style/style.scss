@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Playfair+Display&family=Inter&family=Open+Sans&family=Poppins&display=swap');
-$wine: #c32266;
+$wine: #3f0b21;
 $gold: #dbad52;
 *,
 *::before,
@@ -153,10 +153,11 @@ nav {
         width: 80%;
         margin: 0 auto;
         line-height: 1.5rem;
+        text-transform: capitalize;
     }
     h6 {
-        text-transform: capitalize;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
     }
     button {
         margin-top: 1rem;
@@ -167,6 +168,17 @@ nav {
         justify-content: center;
         flex-direction: column;
         height: 100%;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        max-width: 500px;
+        margin: 10px auto;
+        span {
+            text-transform: uppercase;
+            height: 100px;
+        }
     }
 }
 
@@ -200,6 +212,10 @@ nav {
     display: flex;
     text-align: center;
     flex-direction: column;
+    p {
+        margin: 0 auto;
+        max-width: 700px;
+    }
 }
 
 .button-container {
@@ -489,6 +505,8 @@ footer {
         gap: 1rem;
         text-align: center;
         padding: 2rem 0;
+        max-width: 600px;
+        margin: 1rem auto;
     }
     .about-story {
         margin: 2rem 0;
@@ -860,7 +878,10 @@ footer {
             ul {
                 display: flex;
                 flex-direction: column;
-                padding: 5rem 1rem 1rem;
+                justify-content: center;
+                align-items: center;
+                padding: 6rem 1rem 1rem;
+                gap: 2rem;
                 a {
                     margin-bottom: 1rem;
                     font-size: 1.35rem;
@@ -870,8 +891,8 @@ footer {
         }
         .button {
             text-align: center;
-            margin: 1rem;
-            width: 125px;
+            margin: 1rem auto;
+            width: 105px;
         }
     }
     .none {

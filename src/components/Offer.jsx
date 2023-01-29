@@ -10,35 +10,37 @@ const Offer = () => {
     id: 1,
     icon: Img1,
     name: 'trainings',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+    desc: 'Grow your team to become professionals in leadership, marketing and customer experience.'
   },
   {
     id: 2,
     icon: Img2,
     name: 'courses',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+    desc: 'Our courses serve 9-5 earners with businesses, new or aspiring entrepreneurs and established entrepreneurs. Whatever your need, we have a course for you. '
   },{
     id:3,
     icon: Img3,
     name: 'coaching',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+    desc: 'We connect you to an experienced business mentor/coach with valuable resources suitable for you.'
   },{
     id: 4,
     icon: Img4,
     name: 'consultation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+    desc: 'Get expert advice and strategies for implementing solutions for your business challenges.'
   }
   ]
 
   return (
     <div className='offer'>
       <section>
-        <h4 className='headline'>
-          what we  offer
-        </h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum molestias nihil non? Maxime aut rem omnis alias inventore.
-        </p>
+          <div className='center'>
+            <h4 className='headline'>
+              what we  offer
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum molestias nihil non? Maxime aut rem omnis alias inventore.
+            </p>
+          </div>
         <ul className="offers-cont">
           {
             data.map((item, index )=> (

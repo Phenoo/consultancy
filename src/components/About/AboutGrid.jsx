@@ -45,7 +45,7 @@ const AboutGrid = () => {
             why work with us ?
           </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed reiciendis eum. <br/> Provident sapiente molestias animi ut aspernatur exercitationem.
+          It’s simple, we do not just offer advisory services, we hold your hands through the process. We don’t just offer your strategies and ask you to be on your way, we ensure that you implement them
           </p>
         </div>
         <div className="fourgrid">
