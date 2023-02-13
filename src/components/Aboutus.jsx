@@ -1,5 +1,6 @@
 import React from 'react'
 import Img1 from '../assets/aboutus.webp'
+import { Link } from 'react-router-dom'
 
 
 const Aboutus = () => {
@@ -7,10 +8,10 @@ const Aboutus = () => {
     <div className="aboutus">
       <section>
         <button className='tag'>
-          about us
+          about
         </button>
         <h4 className="headline">
-          providing clarity for business growth
+        What’s The Worth Of Your Business?
         </h4>
         <div className='grid'>
           <div>
@@ -18,29 +19,33 @@ const Aboutus = () => {
           </div>
           <div>
             <p>
-              Businesses often get stuck and need help.
+            And no, we are not asking about the net worth of your business (even though that’s important).
             </p>
             <br />
             <p>
-              A good number of business owners and entrepreneurs are aware of the statistics that most businesses fail in the first five years. 
+            What is the value of your company to you? How much commitment are you willing to put in to guarantee that the vision you have in mind corresponds with - or even exceeds - the reality of what your business is right now?
             </p>
               <br />
             <p>
-              We know the stats too!
-
-            </p>
-            <br />
-
-            <p>
-              This is why we launched this business; to equip business owners and their teams with the necessary skills to run sustainable and thriving businesses that create world-wide employment and enhance fulfilment. 
+            If you feel stuck, worn out, and unmotivated at the thought of your business, you are right where you need to be.
             </p>
             <br />
             <p>
-    	      With our unique strategies, which have been tested and trusted, we have been able to create effective methods that keep businesses innovating and thriving
+            We get it! we recognize that businesses have difficulties from time to time, and most days, we just wish someone could take our hands, lead the way, and participate in the implementation process.
+            </p>
+            <br />
+            <p>
+            That’s exactly what we do!
+            </p>
+            <br />
+            <p>
+            We inspire hope in small businesses. We support businesses like yours to get unstuck and revived. We  also provide strategies and solutions that solvethe current challenges you are facing.
             </p>
             <br />
             <button className="button">
-              learn more
+              <Link to='/about'>
+                let's team up
+              </Link>
             </button>
           </div>
         </div>

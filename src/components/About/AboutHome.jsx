@@ -9,12 +9,12 @@ const AboutHome = () => {
             about us
           </h6>
           <h2>
-            clarity for business growth
+            your growth is our growth
           </h2>
           <p>
           </p>
           <button className="button">
-            get started
+            learn more
           </button>
         </div>
       </section>

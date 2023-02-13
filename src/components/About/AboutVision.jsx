@@ -1,4 +1,4 @@
-import {BsGlobe} from 'react-icons/bs'
+import {BsGlobe, BsLightbulb} from 'react-icons/bs'
 
 
 const AboutVision = () => {
@@ -17,18 +17,18 @@ const AboutVision = () => {
               our mission
             </h5>
             <p>
-              To arm business owners with strategies that promote sustainable businesses, globally. 
+            To design strategies that promotes sustainable businesses, globally.
             </p>
           </div>
           <div className="item">
             <div className="svg">
-              <BsGlobe />
+              <BsLightbulb />
             </div>
             <h5 className="tophead">
               our vision
             </h5>
             <p>
-              To be the most preferred consulting firm for small businesses in Africa.
+              To be the most referred consulting firm for small businesses in Africa.
             </p>
           </div>
         </div>

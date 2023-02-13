@@ -25,8 +25,7 @@ const Article = () => {
             real business insights
           </h4>
           <p>
-            There is something about our business blogs that keeps you glued. 
-            We make business complexities as simple as ABC.
+          Our business blogs somehow manages to keep you hooked. We reduce the complexity of business to ABC.
           </p>
         </div>
         <div className="article-container fourgrid">

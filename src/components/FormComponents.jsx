@@ -11,19 +11,24 @@ const FormComponents = () => {
           <p>
             Gold Sycamore specialize in providing clarity for owners so that the business can grow.
           </p>
+          <br />
+          <p>
+          Get in touch with us via email, call or complete the form to learn how we can be of help to you.
+          </p>
+          <br />
           <a href="mailto:goldsycamore@gmail.com">
             hello@goldsycamore.com
           </a>
-          <p>
+          <a href="http">
             +234 801 2345 678
-          </p>
+          </a>
         </div>
         <div>
           <h4 className="headline">
             send us a message
           </h4>
           <p>
-            We are here to help, complete the form below and we will get back to you as soon as possible.
+            Do you have a quick message for us? Kindly send us a message using the form and we will be in touch with you as soon as possible. Thanks!
           </p>
           <form>
             <div className="form-input">
@@ -43,6 +48,12 @@ const FormComponents = () => {
                 Business Name
               </label>
               <input type="text" name="name" placeholder="Gold Sycamore" />
+            </div>
+            <div className="form-input">
+              <label>
+                Business Size
+              </label>
+              <input type="text" name="name" placeholder="Small or 4" />
             </div>
             <div className="form-input">
               <label>How Can We Help</label>

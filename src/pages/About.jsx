@@ -21,9 +21,10 @@ const About = () => {
             who are we?
           </button>
           <p>
-          We are a vibrant set of business experts who are committed to growing sustainable businesses. 
+          In a congested industry, you can distinguish your business. You are not required to follow the crowd. Your business can stand out and shine because success has a definitive meaning to you.
           <br />
-            Like we say among ourselves, “We sleep, breathe and think about business growth all the time”. 
+          <br />
+          When we work together to provide your business solutions, we are not attempting to alter the norm. In reality, we guarantee that the business objectives are successfully carried out.
           </p>
         </div>
         <Story />

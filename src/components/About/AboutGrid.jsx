@@ -1,43 +1,43 @@
 import React from 'react'
-import { FaSchool,   FaPeace, FaUserAlt } from 'react-icons/fa'
-import { MdModelTraining } from 'react-icons/md'
+import Img1 from '../../assets/aboutus.webp'
+
 
 const AboutGrid = () => {
-  const data = [{
-    id: 1,
-    icon: <FaUserAlt />,
-    name: 'trainings',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },
-  {
-    id: 2,
-    icon: <FaSchool />,
-    name: 'courses',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },{
-    id:3,
-    icon: <FaPeace />,
-    name: 'coaching',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },
-  {
-    id: 4,
-    icon: <MdModelTraining />,
-    name: 'consultation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },{
-    id: 5,
-    icon: <MdModelTraining />,
-    name: 'consultation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  }
-  ,{
-    id: 6,
-    icon: <MdModelTraining />,
-    name: 'consultation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },
-  ]
+  // const data = [{
+  //   id: 1,
+  //   icon: <FaUserAlt />,
+  //   name: 'trainings',
+  //   desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+  // },
+  // {
+  //   id: 2,
+  //   icon: <FaSchool />,
+  //   name: 'courses',
+  //   desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+  // },{
+  //   id:3,
+  //   icon: <FaPeace />,
+  //   name: 'coaching',
+  //   desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+  // },
+  // {
+  //   id: 4,
+  //   icon: <MdModelTraining />,
+  //   name: 'consultation',
+  //   desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+  // },{
+  //   id: 5,
+  //   icon: <MdModelTraining />,
+  //   name: 'consultation',
+  //   desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+  // }
+  // ,{
+  //   id: 6,
+  //   icon: <MdModelTraining />,
+  //   name: 'consultation',
+  //   desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+  // },
+  // ]
   return (
     <div className="about-grid">
         <div className="header">
@@ -45,32 +45,37 @@ const AboutGrid = () => {
             why work with us ?
           </h4>
           <p>
-          It’s simple, we do not just offer advisory services, we hold your hands through the process. We don’t just offer your strategies and ask you to be on your way, we ensure that you implement them
+          This is the part you ask yourself, “why should I work with them?”
           </p>
         </div>
-        <div className="fourgrid">
-          {
-            data.map(item => {
-              return (
-                <div className="item" key={item.id}>
-                  <div className="svg">
-                    {item.icon}
-                  </div>
-                  <h4>
-                    {item.name}
-                  </h4>
-                  <p>
-                    {item.desc}
-                  </p>
-                </div>
-            )
-            })
-          }
-        </div>
-        <div className="center">
-          <button className="button">
-            get started
-          </button>
+        <div className="grid">
+          <div className="div text">
+           <div>
+              <p>
+              It’s pretty simple.
+              </p>
+              <br />
+              <p>
+              Long before you ever realized you needed us, we cared enough about you to restructure our company to meet your needs.
+              </p>
+              <br />
+              <p>
+              We are not a company that “will give you the advice and bolt”. We sit tgether with you to develop the solutions and guide you towards the success you seek. While we don’t do the work for you, we ensure you aren’t doing it by yourself either.
+              </p>
+              <br />
+              <p>
+              Ready to grow your business?
+              </p>
+          </div>
+          <div>
+            <button className="button">
+              let's collaborate
+            </button>
+          </div>
+          </div>
+          <div className="div">
+            <img src={Img1} alt='about' />
+          </div>
         </div>
     </div>
   )

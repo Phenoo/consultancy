@@ -6,7 +6,7 @@ import Logo from './Logo'
 import Img1 from '../assets/certify.png'
 
 const Navigation = () => {
-  const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false);
   return (
     <nav id="nav">
         <section>
@@ -51,11 +51,11 @@ const Navigation = () => {
                 </li>
               </ul>
               <button className='button mobile'>
-                get started
+                grow now
               </button>
             </div>
             <button className='button none'>
-              get started
+              grow now
             </button>
             <button className='mobile' onClick={() => setNavbar(!navbar)}>
               {

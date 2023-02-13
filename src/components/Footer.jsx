@@ -1,6 +1,5 @@
 import React from 'react'
-import {  FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaTwitter } from 'react-icons/fa'
-import { AiOutlineMail} from 'react-icons/ai'
+import {  FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 
@@ -13,7 +12,7 @@ const Footer = () => {
             <div className="footer-desc">
               <Logo />
               <p>
-                We specialize in providing clarity for small business owners so that their business can grow.
+              Providing clarity for business growth.
               </p>
               <div className="social">
                 <ul>
@@ -26,19 +25,20 @@ const Footer = () => {
                     <li className="twitter">
                       <FaTwitter />
                     </li>
-                    <li className="linkedin">
-                      <FaLinkedinIn />
-                    </li>
                 </ul>
               </div>
             </div>
-            <div className="footer-links">
               <div className="foot">
                 <h6>Company</h6>
                 <ul>
                   <li>
                     <Link to='/about'>
                       about us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/services'>
+                      services
                     </Link>
                   </li>
                   <li>
@@ -63,7 +63,21 @@ const Footer = () => {
                       templates
                     </Link>
                   </li>
+                  <li>
+                    <Link to='/faq'>
+                      faqs
+                    </Link>
+                  </li>
                 </ul>
+              </div>
+              <div className='foot'>
+                <h6>
+                  join our mailing list
+                </h6>
+                <div className="form-input">
+                  <input type="email" placeholder='Enter your email address' />
+                  <button className="button">subscribe</button>
+                </div>
               </div>
               <div className="foot foot-mail">
                 <h6>
@@ -71,22 +85,20 @@ const Footer = () => {
                 </h6>
                 <ul>
                   <li>
-                    <span>
-                      <FaPhone />
-                    </span>
-                    <span>
-                      <p>+234 7037 873 2633</p>
-                    </span>
+                    <a href="ww.goldsycamore.com">
+                    www.goldsycamore.com
+                    </a>
                   </li>
                   <li>
-                    <span>
-                      <AiOutlineMail />
-                    </span>
-                    <span>hello@goldsycamore.com</span>
+                    <a href="mailto:hello@goldsycamore.com">
+                      hello@goldsycamore.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel">Phone Number</a>
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
         </section>
         <p className='copy'>

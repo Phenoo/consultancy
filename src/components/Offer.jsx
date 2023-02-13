@@ -10,23 +10,23 @@ const Offer = () => {
     id: 1,
     icon: Img1,
     name: 'trainings',
-    desc: 'Grow your team to become professionals in leadership, marketing and customer experience.'
+    desc: 'With our trainings, improve the leadership, marketing, and customer experience skills of your team.'
   },
   {
     id: 2,
     icon: Img2,
     name: 'courses',
-    desc: 'Our courses serve 9-5 earners with businesses, new or aspiring entrepreneurs and established entrepreneurs. Whatever your need, we have a course for you. '
+    desc: 'We have courses that suits your needs whether you are a new or aspiring entrepreneur or an established one. '
   },{
     id:3,
     icon: Img3,
     name: 'coaching',
-    desc: 'We connect you to an experienced business mentor/coach with valuable resources suitable for you.'
+    desc: 'We connect you to a seasoned business mentor or coach who has useful resources that are relevant to you.'
   },{
     id: 4,
     icon: Img4,
     name: 'consultation',
-    desc: 'Get expert advice and strategies for implementing solutions for your business challenges.'
+    desc: 'Get 1:1 expert advice and strategies for implementing solutions for your business challenges.'
   }
   ]
 
@@ -35,10 +35,10 @@ const Offer = () => {
       <section>
           <div className='center'>
             <h4 className='headline'>
-              what we  offer
+            You Must Not Feel Stuck Before You Get Help
             </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum molestias nihil non? Maxime aut rem omnis alias inventore.
+            Our services are designed to fulfill various business goals at any level.
             </p>
           </div>
         <ul className="offers-cont">

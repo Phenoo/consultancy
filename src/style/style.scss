@@ -145,19 +145,20 @@ nav {
     height: 90vh;
     padding: 2rem 0;
     h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: capitalize;
         font-weight: 500;
+        max-width: 900px;
+    }
+    h6 {
+        font-size: 1rem;
+        text-transform: capitalize;
     }
     p {
         width: 80%;
         margin: 0 auto;
         line-height: 1.5rem;
         text-transform: capitalize;
-    }
-    h6 {
-        font-size: 1.4rem;
-        text-transform: uppercase;
     }
     button {
         margin-top: 1rem;
@@ -173,10 +174,10 @@ nav {
         display: flex;
         align-items: center;
         gap: 5px;
-        max-width: 500px;
+        max-width: 700px;
         margin: 10px auto;
         span {
-            text-transform: uppercase;
+            text-transform: capitalize;
             height: 100px;
         }
     }
@@ -313,7 +314,7 @@ nav {
             bottom: 1rem;
             width: 180px;
             height: 100%;
-            border: 1px solid $wine;
+            border: 1px solid $gold;
             z-index: -1;
         }
         img {
@@ -366,9 +367,9 @@ footer {
     .footer {
         padding: 4rem 0 0;
         .footer-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 3rem;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
         }
         .footer-desc {
             p {
@@ -400,10 +401,7 @@ footer {
                 }
             }
         }
-        .footer-links {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
+        .foot {
             margin: 10px 0;
             ul {
                 flex-direction: column;
@@ -414,22 +412,38 @@ footer {
                 text-transform: uppercase;
                 margin: 10px 0;
                 font-size: 1rem;
-                font-weight: 500;
+                font-weight: 700;
             }
             span {
                 text-transform: lowercase;
             }
-            .foot-mail {
-                li {
-                    display: flex;
-                    gap: 10px;
-                    align-items: center;
-                    svg {
-                        font-size: 0.8rem;
-                    }
+        }
+        .foot-mail {
+            li {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                a {
+                    text-transform: lowercase;
+                    color: $gold;
+                    margin-bottom: 10px;
+                    text-decoration: underline;
                 }
             }
         }
+    }
+}
+
+.form-input {
+    input {
+        background: #fff;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 87%;
+    }
+    .button {
+        width: 100%;
     }
 }
 
@@ -505,7 +519,7 @@ footer {
         gap: 1rem;
         text-align: center;
         padding: 2rem 0;
-        max-width: 600px;
+        max-width: 700px;
         margin: 1rem auto;
     }
     .about-story {
@@ -544,27 +558,16 @@ footer {
     .about-grid {
         padding: 2rem 0;
         width: 100%;
-        .center {
-            padding: 0;
-            width: 120px;
-            margin: 2rem auto;
+        .text {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
         }
         .header {
             margin-bottom: 2rem;
             h4,
             p {
                 text-align: center;
-            }
-        }
-        .item {
-            padding: 1.5rem 1rem;
-            svg {
-                color: $wine;
-            }
-            h4 {
-                text-transform: capitalize;
-                font-size: 1.5rem;
-                margin: 8px 0;
             }
         }
     }
@@ -619,6 +622,26 @@ footer {
     color: #fff;
     height: 90vh;
     padding: 2rem 0;
+}
+
+.what-we-offer-section {
+    margin: 3rem 0;
+}
+
+.what-we-offer {
+    article {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    div {
+        display: flex;
+        align-items: center;
+    }
+    svg {
+        color: $wine;
+    }
 }
 
 .service-page {
@@ -703,6 +726,10 @@ footer {
     .grid {
         place-items: center;
     }
+    a {
+        color: $gold;
+        text-decoration: underline;
+    }
     p {
         margin: 10px 0;
     }
@@ -734,18 +761,6 @@ footer {
             }
         }
     }
-    .location {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        svg {
-            font-size: 1.25rem;
-        }
-        h6 {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-    }
 }
 
 /////blog//////////////////////
@@ -770,7 +785,7 @@ footer {
 .blog-card {
     width: 340px;
     height: 360px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 7px 10px 0 rgba(0, 0, 0, 0.20);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -880,8 +895,9 @@ footer {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 6rem 1rem 1rem;
+                padding: 5rem 1rem 0;
                 gap: 2rem;
+                height: 100%;
                 a {
                     margin-bottom: 1rem;
                     font-size: 1.35rem;

@@ -9,12 +9,12 @@ const ServiceHome = () => {
             our services
           </h6>
           <h2>
-            clarity for business growth
+          Either you focus on your competitors or you focus on YOU!
           </h2>
           <p>
           </p>
           <button className="button">
-            get started
+            explore
           </button>
         </div>
       </section>
