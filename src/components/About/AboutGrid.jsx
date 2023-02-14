@@ -67,10 +67,12 @@ const AboutGrid = () => {
               Ready to grow your business?
               </p>
           </div>
+          <br />
           <div>
             <button className="button">
               let's collaborate
             </button>
+            <br />
           </div>
           </div>
           <div className="div">

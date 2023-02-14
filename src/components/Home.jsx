@@ -1,5 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -41,7 +42,9 @@ const Home = () => {
             we are your biggest fan.
           </p>
           <button className="button">
-            grow now
+            <Link to='/about'>
+              learn more
+            </Link>
           </button>
         </div>
       </section>

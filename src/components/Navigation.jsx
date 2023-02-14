@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import Logo from './Logo'
 
 import Img1 from '../assets/certify.png'
@@ -51,11 +51,15 @@ const Navigation = () => {
                 </li>
               </ul>
               <button className='button mobile'>
-                grow now
+                <Link to='/services' onClick={() => setNavbar(!navbar)}>
+                  grow now
+                </Link>
               </button>
             </div>
-            <button className='button none'>
-              grow now
+            <button className='button none' >
+            <Link to='/services'>
+                grow now
+              </Link>
             </button>
             <button className='mobile' onClick={() => setNavbar(!navbar)}>
               {

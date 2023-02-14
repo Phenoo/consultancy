@@ -44,11 +44,16 @@ const ServiceOffer = () => {
             </div>
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe impedit earum neque exercitationem fugit quibusdam autem ratione inventore aperiam, dolore voluptatum distinctio perspiciatis esse nisi debitis sunt suscipit aut fugiat quidem reprehenderit accusantium natus. Voluptas assumenda, quas alias numquam, sint corrupti nesciunt commodi accusamus quos suscipit sapiente nam natus laborum blanditiis temporibus, ea aliquam! Perspiciatis eos asperiores quam quaerat quo. Dolore, doloribus consequatur neque quaerat quidem temporibus, vitae fugit doloremque illo rem explicabo optio nam in ipsa nihil eaque.
-              </p>
+              Typically, a business's owner is not the person who gets in touch with clients first. Most likely, it's a staff.
               <br />
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, mollitia. Doloremque optio consequatur accusamus! Quibusdam recusandae qui voluptates delectus optio tenetur perspiciatis, nobis vitae magnam dolor, iure corrupti autem dolores!
+              <br />
+              Untrained employees who are not committed to the company's objectives are a recipe for failure.
+              <br />
+              <br />
+              In our corporate training, we focus on solutions for marketing communications, client management, and customer experience.
+              <br />
+              <br />
+              This is an offer you should consider if you've ever had a bad experience with employees.
               </p>
             </div>
           </div>
@@ -58,7 +63,7 @@ const ServiceOffer = () => {
             courses
           </h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto velit aliquam, aliquid vitae dolores iusto, quidem dicta debitis, molestias id temporibus vel qui sed reiciendis culpa cum cumque tempora natus quas dignissimos impedit provident? A, possimus sunt, ipsam pariatur expedita facere excepturi beatae accusantium aut nobis corporis officia, deleniti harum.
+          Our courses are simple to execute and comprehend. Although it might not have the individualized attention that a consulting session offers, courses provide solutions to more general, everyday business problems
           </p>
           <div className="courses-cont">
             <div className="wrap">
@@ -92,11 +97,13 @@ const ServiceOffer = () => {
           <div className="grid">
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe impedit earum neque exercitationem fugit quibusdam autem ratione inventore aperiam, dolore voluptatum distinctio perspiciatis esse nisi debitis sunt suscipit aut fugiat quidem reprehenderit accusantium natus. Voluptas assumenda, quas alias numquam, sint corrupti nesciunt commodi accusamus quos suscipit sapiente nam natus laborum blanditiis temporibus, ea aliquam! Perspiciatis eos asperiores quam quaerat quo. Dolore, doloribus consequatur neque quaerat quidem temporibus, vitae fugit doloremque illo rem explicabo optio nam in ipsa nihil eaque.
-              </p>
+              From working with previous clients, we observed that social interactions affect learning habits. 
               <br />
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, mollitia. Doloremque optio consequatur accusamus! Quibusdam recusandae qui voluptates delectus optio tenetur perspiciatis, nobis vitae magnam dolor, iure corrupti autem dolores!
+              <br />
+                During group coaching, participants learn from the experiences, case studies and scenarios of fellow participants. Our coaching program also fosters industry relationships and collaborations among participants. 
+                <br />
+                <br />
+                If you learn best in vibrant environments made up of brilliant entrepreneurs, our coaching program was designed just for you.              
               </p>
             </div>
             <div>
@@ -114,11 +121,19 @@ const ServiceOffer = () => {
             </div>
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe impedit earum neque exercitationem fugit quibusdam autem ratione inventore aperiam, dolore voluptatum distinctio perspiciatis esse nisi debitis sunt suscipit aut fugiat quidem reprehenderit accusantium natus. Voluptas assumenda, quas alias numquam, sint corrupti nesciunt commodi accusamus quos suscipit sapiente nam natus laborum blanditiis temporibus, ea aliquam! Perspiciatis eos asperiores quam quaerat quo. Dolore, doloribus consequatur neque quaerat quidem temporibus, vitae fugit doloremque illo rem explicabo optio nam in ipsa nihil eaque.
-              </p>
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, mollitia. Doloremque optio consequatur accusamus! Quibusdam recusandae qui voluptates delectus optio tenetur perspiciatis, nobis vitae magnam dolor, iure corrupti autem dolores!
+                It's possible that you've tried a number of self-help techniques and free workshops that didn't work for you. You may have even spent hours searching Google and watching YouTube videos in an attempt to solve a specific business problem.
+                <br />
+                <br />
+                These things do not always work for a reason. It's because it wasn't created specifically to address your pain point.
+                <br />
+                <br />
+                For various people, profitability and business growth have different meanings. So here’s when we ask you what profitability looks like to you. 
+                <br />
+                <br />
+                Additionally, there is a reason why some business owners will always prefer customized advice. If you are a 1:1, focus-on-me kinda business owner, we have been waiting on you. 
+                <br />
+                <br />
+                Get clarity and advance your business right away!
               </p>
             </div>
           </div>

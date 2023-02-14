@@ -77,6 +77,7 @@ button {
     cursor: pointer;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 section {
@@ -120,7 +121,7 @@ nav {
 }
 
 .main-home {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../assets/homebg.webp);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../assets/homemain.webp);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,7 +148,7 @@ nav {
     h2 {
         font-size: 2.5rem;
         text-transform: capitalize;
-        font-weight: 500;
+        font-weight: 700;
         max-width: 900px;
     }
     h6 {
@@ -176,6 +177,7 @@ nav {
         gap: 5px;
         max-width: 700px;
         margin: 10px auto;
+        justify-content: center;
         span {
             text-transform: capitalize;
             height: 100px;
@@ -194,6 +196,7 @@ nav {
     font-size: 2rem;
     text-transform: capitalize;
     margin: 0.8rem 0;
+    font-weight: 700;
 }
 
 .tag {
@@ -228,9 +231,10 @@ nav {
 .button {
     background: $gold;
     color: #fff;
-    padding: 1rem 1.5rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
+    font-size: 14px;
     transition: all 0.3s ease;
     &:hover {
         opacity: 0.8;
@@ -361,6 +365,59 @@ nav {
     }
 }
 
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 2rem 0;
+    }
+    .headline {
+        margin: 0;
+    }
+    .sub {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .question {
+        padding: 1rem 0;
+        border-top: 1px solid #111;
+        cursor: pointer;
+        width: 700px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0 auto;
+        align-items: center;
+        .heading {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+        }
+        svg {
+            font-size: 1.4rem;
+        }
+        h5 {
+            font-weight: 500;
+            color: $gold;
+            font-size: 1.25rem;
+        }
+        h6 {
+            font-size: 1.25rem;
+            font-family: 'Open Sans';
+            font-weight: 500;
+        }
+    }
+}
+
 footer {
     color: #fff;
     background: #0e0b01;
@@ -411,7 +468,7 @@ footer {
             h6 {
                 text-transform: uppercase;
                 margin: 10px 0;
-                font-size: 1rem;
+                font-size: 1.25rem;
                 font-weight: 700;
             }
             span {
@@ -442,7 +499,10 @@ footer {
         margin-bottom: 1rem;
         width: 87%;
     }
-    .button {
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 }
@@ -499,7 +559,7 @@ footer {
     justify-content: center;
     text-align: center;
     color: #fff;
-    height: 90vh;
+    // height: 90vh;
     padding: 2rem 0;
 }
 
@@ -620,7 +680,7 @@ footer {
     justify-content: center;
     text-align: center;
     color: #fff;
-    height: 90vh;
+    // height: 90vh;
     padding: 2rem 0;
 }
 
@@ -716,7 +776,7 @@ footer {
     justify-content: center;
     text-align: center;
     color: #fff;
-    height: 90vh;
+    // height: 90vh;
     padding: 2rem 0;
 }
 
@@ -774,7 +834,7 @@ footer {
     justify-content: center;
     text-align: center;
     color: #fff;
-    height: 90vh;
+    // height: 90vh;
     padding: 2rem 0;
 }
 
@@ -786,7 +846,7 @@ footer {
     width: 340px;
     height: 360px;
     border-radius: 8px;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 7px 10px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
     transition: all 0.3s ease;
     cursor: pointer;
     text-transform: capitalize;
@@ -864,7 +924,7 @@ footer {
         width: 90%;
     }
     p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     nav {
         .menulist {
@@ -908,7 +968,6 @@ footer {
         .button {
             text-align: center;
             margin: 1rem auto;
-            width: 105px;
         }
     }
     .none {
@@ -922,12 +981,13 @@ footer {
         }
     }
     .home {
+        height: 500px;
         h2 {
-            font-size: 2.25rem;
+            font-size: 28px;
             width: 90%;
         }
         h6 {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
     }
     .fourgrid {
@@ -939,10 +999,15 @@ footer {
     .review-card {
         grid-template-columns: 100%;
     }
+    .faq {
+        .question {
+            width: 100%;
+        }
+    }
     footer {
         .footer {
-            .footer-links {
-                grid-template-columns: repeat(2, 1fr);
+            .footer-container {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
@@ -966,9 +1031,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    p {
-        font-size: 0.7rem;
-    }
     section {
         width: 95%;
     }
@@ -978,7 +1040,9 @@ footer {
         }
     }
     .home {
-        height: 75vh;
+        width: 100%;
+        height: 500px;
+        background-position: center;
         h2 {
             font-size: 1.5rem;
             width: 100%;
@@ -991,10 +1055,9 @@ footer {
             font-size: 0.8rem;
             line-height: 1rem;
         }
-    }
-    .button {
-        padding: 0.7rem 1rem;
-        font-size: 0.8rem;
+        .flex {
+            font-size: 1.2rem;
+        }
     }
     .swiper {
         height: 400px;
@@ -1046,6 +1109,33 @@ footer {
             }
         }
     }
+    .service-page{
+        .courses-cont{
+            .wrap{
+                gap:1.5rem;
+            }
+            .item{
+                width: 295px;
+            }
+        }
+    }
+    .faq {
+        .header {
+            h6 {
+                font-size: 1rem;
+            }
+            svg {
+                font-size: 1rem;
+            }
+        }
+        p {
+            margin-top: 1rem;
+            font-size: 0.7rem;
+        }
+        .question {
+            width: 100%;
+        }
+    }
     .service-page {
         .article {
             p {
@@ -1056,15 +1146,11 @@ footer {
     footer {
         .footer {
             .footer-container {
-                flex-direction: column;
-            }
-            .footer-links {
                 grid-template-columns: repeat(1, 1fr);
-                gap: 2rem;
             }
         }
     }
     .copy {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 }

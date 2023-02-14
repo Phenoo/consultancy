@@ -63,11 +63,6 @@ const Footer = () => {
                       templates
                     </Link>
                   </li>
-                  <li>
-                    <Link to='/faq'>
-                      faqs
-                    </Link>
-                  </li>
                 </ul>
               </div>
               <div className='foot'>
@@ -76,7 +71,9 @@ const Footer = () => {
                 </h6>
                 <div className="form-input">
                   <input type="email" placeholder='Enter your email address' />
-                  <button className="button">subscribe</button>
+                  <div>
+                    <button className="button">subscribe</button>
+                  </div>
                 </div>
               </div>
               <div className="foot foot-mail">
@@ -84,11 +81,6 @@ const Footer = () => {
                   contacts
                 </h6>
                 <ul>
-                  <li>
-                    <a href="ww.goldsycamore.com">
-                    www.goldsycamore.com
-                    </a>
-                  </li>
                   <li>
                     <a href="mailto:hello@goldsycamore.com">
                       hello@goldsycamore.com
