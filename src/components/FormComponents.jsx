@@ -19,6 +19,8 @@ const FormComponents = () => {
           <a href="mailto:goldsycamore@gmail.com">
             hello@goldsycamore.com
           </a>
+          <br />
+          <br />
           <a href="tel:+2348012345678">
             +234 801 2345 678
           </a>
@@ -60,7 +62,7 @@ const FormComponents = () => {
               <textarea name="" id="" cols="30" rows="10" placeholder='Write your message here...'></textarea>
             </div>
             <button type="submit" className="button">  
-              send
+            send us a message
             </button>
           </form>
         </div>

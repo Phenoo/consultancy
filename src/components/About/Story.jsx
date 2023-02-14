@@ -6,10 +6,10 @@ const Story = () => {
         our story
       </h4>
       <div className="grid">
-      <div className="image">
+      <div className="image order-2">
           <img src={Img1} alt='stroy' />
         </div>
-        <div className="text">
+        <div className="text order-1">
           <p>
           When we work together to provide your business solutions, we are not attempting to alter the norm. In reality, we guarantee that the business objectives are successfully carried out.
           </p>

@@ -41,6 +41,7 @@ const Faq = () => {
           <h4 className='headline'>
             <span>FAQs</span> (Frequently asked questions)
           </h4>
+          <br />
           <p className='sub'>
             Everything you need to know about the product
           </p>

@@ -10,14 +10,14 @@ const Aboutus = () => {
         <button className='tag'>
           about
         </button>
-        <h4 className="headline">
-        What’s The Worth Of Your Business?
-        </h4>
         <div className='grid'>
-          <div>
+          <div className='order-2'>
             <img src={Img1} alt='about' />
           </div>
-          <div>
+          <div className='order-1'>
+            <h4 className="headline">
+              What’s The Worth Of Your Business?
+            </h4>
             <p>
             And no, we are not asking about the net worth of your business (even though that’s important).
             </p>

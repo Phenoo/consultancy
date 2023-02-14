@@ -39,10 +39,10 @@ const ServiceOffer = () => {
             trainings
           </h4>
           <div className="grid">
-            <div>
+            <div className='order-2'>
               <img src={Img3} alt="item" />
             </div>
-            <div>
+            <div className='order-1'>
               <p>
               Typically, a business's owner is not the person who gets in touch with clients first. Most likely, it's a staff.
               <br />
@@ -95,7 +95,7 @@ const ServiceOffer = () => {
             coaching
           </h4>
           <div className="grid">
-            <div>
+            <div className=''>
               <p>
               From working with previous clients, we observed that social interactions affect learning habits. 
               <br />
@@ -116,10 +116,10 @@ const ServiceOffer = () => {
                 consultation
           </h4>
           <div className='grid'>
-            <div>
+            <div className='prder-2'>
               <img src={Img4} alt='offer' /> 
             </div>
-            <div>
+            <div className='order-1'>
               <p>
                 It's possible that you've tried a number of self-help techniques and free workshops that didn't work for you. You may have even spent hours searching Google and watching YouTube videos in an attempt to solve a specific business problem.
                 <br />

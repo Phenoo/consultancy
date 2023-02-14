@@ -15,8 +15,12 @@ const BlogCard = ({item}) => {
           Strategy and growth solutions for business
         </h4>
         <p>
-          5 minutes read
+          Lorem ipsum dolor sit amet consectetur adipisicing elit suscipit vero magni inventore, obcaecati esse similique!
         </p>
+        <br />
+        <h5>
+          5 minutes read
+        </h5>
       </div>
     </article>
   )
