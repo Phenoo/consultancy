@@ -11,7 +11,6 @@ const FormComponents = () => {
           <p>
             Gold Sycamore specialize in providing clarity for owners so that the business can grow.
           </p>
-          <br />
           <p>
           Get in touch with us via email, call or complete the form to learn how we can be of help to you.
           </p>

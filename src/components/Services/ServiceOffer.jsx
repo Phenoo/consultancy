@@ -132,7 +132,6 @@ const ServiceOffer = () => {
                 <br />
                 Additionally, there is a reason why some business owners will always prefer customized advice. If you are a 1:1, focus-on-me kinda business owner, we have been waiting on you. 
                 <br />
-                <br />
                 Get clarity and advance your business right away!
               </p>
             </div>
