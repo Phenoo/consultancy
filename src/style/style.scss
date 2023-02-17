@@ -52,7 +52,8 @@ p {
 
 img {
     width: 100%;
-    height: 100%;
+    max-height: 500px;
+    height: auto;
 }
 
 a {
@@ -197,6 +198,9 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 2rem 0;
+    img {
+        object-fit: contain;
+    }
 }
 
 .headline {
@@ -378,7 +382,7 @@ nav {
     .swiperslide {
         width: auto;
     }
-    .swiper-pagination{
+    .swiper-pagination {
         display: none;
     }
 }
@@ -604,9 +608,12 @@ footer {
     }
     .about-story {
         margin: 2rem 0;
+        .grid {
+            place-items: center;
+        }
         p {
             font-weight: 400;
-            line-height: 28px;
+            line-height: 20px;
         }
     }
     .about-vision {
@@ -636,10 +643,10 @@ footer {
     .about-grid {
         padding: 2rem 0;
         width: 100%;
-        img {
-            width: 560px;
-            height: 616px;
-        }
+        // img {
+        //     width: 560px;
+        //     height: 616px;
+        // }
         .text {
             display: flex;
             justify-content: space-between;
@@ -690,6 +697,7 @@ footer {
             height: 250px;
             object-position: top;
             border-radius: 10px;
+            object-fit: cover;
         }
     }
 }
@@ -919,7 +927,7 @@ footer {
 .courses-cont {
     padding: 2rem 0;
     width: 100%;
-    button{
+    button {
         margin: 2rem auto;
     }
     .wrap {
@@ -935,19 +943,29 @@ footer {
 
 .course-card {
     width: 300px;
+    height: 300px;
     box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
     border-radius: 8px;
-    padding: 0px 0px 24px;
+    padding: 0px 0px 16px;
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
         transform: scale(0.9);
         transition: all 0.3s ease;
     }
+    .image {
+        height: 200px;
+        img {
+            height: 100%;
+        }
+    }
     .text {
+        height: 100%;
         padding: 1rem 10px 0;
         h4 {
+            height: 50px;
             font-size: 1.2rem;
+            text-transform: capitalize;
         }
     }
     .flex {
@@ -966,12 +984,11 @@ footer {
 
 @media screen and (max-width: 1000px) {
     .teamswiper {
-        .swiper-pagination{
+        .swiper-pagination {
             display: flex;
         }
     }
 }
-
 
 @media screen and (max-width: 900px) {
     section {

@@ -1,29 +1,35 @@
 import React from 'react'
 import Search from '../components/Search'
 import Helmet from 'react-helmet'
-import Img1 from '../assets/courses.webp'
 import { AiOutlineStar } from 'react-icons/ai'
+
+import Img1 from '../assets/courses.webp'
+import Img2 from '../assets/lock.png'
 
 
 const Courses = () => {
     const data = [
       {
-    id: 1,
-    image: Img1,
-    name: 'trainings',
+      id: 1,
+      image: Img1,
+      name: 'side hustle to main gig',
+      rating: ' 4.5 (126)'
     },
     {
       id: 2,
       image: Img1,
-      name: 'courses',
+      name: 'Launch Like a Pro: Sales, Marketing and Profit',
+      rating: ' 4.5 (126)'
     },{
       id:3,
       image: Img1,
-      name: 'coaching',
+      name: 'The Ultimate Customer Experience',
+      rating: ' 4.5 (126)'
     },{
       id: 4,
-      image: Img1,
-      name: 'consultation',
+      image: Img2,
+      name: 'Course Coming Soon!',
+      rating: '---'
     }
     ]
   return (
@@ -62,17 +68,19 @@ const Courses = () => {
               {
                 data.map(item => {
                   return <div className="course-card" key={item.id}>
-                    <img src={Img1} alt="item" />
+                    <div className='image'>
+                      <img src={item.image} alt="item" />
+                    </div>
                     <div className="text">
                       <h4>
-                        Growth Strategy And Business Model
+                        {item.name}
                       </h4>
                       <div className="flex">
                         <p>
                           <AiOutlineStar />
                         </p>
                         <p>
-                          4.5 (126)
+                         {item.rating}
                         </p>
                       </div>
                     </div>

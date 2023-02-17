@@ -7,9 +7,6 @@ const Aboutus = () => {
   return (
     <div className="aboutus">
       <section>
-        <button className='tag'>
-          about
-        </button>
         <div className='grid'>
           <div className='order-2'>
             <img src={Img1} alt='about' />

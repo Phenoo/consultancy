@@ -54,6 +54,11 @@ const Footer = () => {
                 </h6>
                 <ul>
                   <li>
+                    <Link to='/courses'>
+                      courses
+                    </Link>
+                  </li>
+                  <li>
                     <Link to='/services'>
                       services
                     </Link>

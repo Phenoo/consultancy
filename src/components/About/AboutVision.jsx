@@ -5,9 +5,6 @@ const AboutVision = () => {
   return (
     <div className="about-vision">
       <section>
-        <h4 className="headline">
-          about gold sycamore
-        </h4>
         <div className="grid">
           <div className="item">
             <div className="svg">

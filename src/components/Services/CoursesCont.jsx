@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Img1 from '../../assets/courses.webp'
+import Img2 from '../../assets/lock.png'
 
 
 import {AiOutlineStar} from 'react-icons/ai'
@@ -15,22 +16,26 @@ const CoursesCont = () => {
   const data = [
     {
     id: 1,
-    name: 'trainings',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-    },
-    {
-      id: 2,
-      name: 'courses',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-    },{
-      id:3,
-      name: 'coaching',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-    },{
-      id: 4,
-      name: 'consultation',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-    }
+    image: Img1,
+    name: 'side hustle to main gig',
+    rating: ' 4.5 (126)'
+  },
+  {
+    id: 2,
+    image: Img1,
+    name: 'Launch Like a Pro: Sales, Marketing and Profit',
+    rating: ' 4.5 (126)'
+  },{
+    id:3,
+    image: Img1,
+    name: 'The Ultimate Customer Experience',
+    rating: ' 4.5 (126)'
+  },{
+    id: 4,
+    image: Img2,
+    name: 'Course Coming Soon!',
+    rating: '---'
+  }
   ]
   return (
     <div className='courses-cont'>
@@ -49,17 +54,19 @@ const CoursesCont = () => {
                 return(
                   <SwiperSlide className="swiperslide" key={item.id}>
                     <article className="course-card">
-                      <img src={Img1} alt="item" />
+                      <div className='image'>
+                        <img src={item.image} alt="item" />                        
+                      </div>
                       <div className="text">
                         <h4>
-                          Growth Strategy And Business Model
+                          {item.name}
                         </h4>
                         <div className="flex">
                           <p>
                             <AiOutlineStar />
                           </p>
                           <p>
-                            4.5 (126)
+                            {item.rating}
                           </p>
                         </div>
                       </div>
