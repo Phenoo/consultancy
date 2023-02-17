@@ -49,7 +49,7 @@ const AboutGrid = () => {
           </p>
         </div>
         <div className="grid">
-          <div className="div text">
+          <div className="div text order-2">
            <div>
               <p>
               It’s pretty simple.
@@ -75,7 +75,7 @@ const AboutGrid = () => {
             <br />
           </div>
           </div>
-          <div className="div">
+          <div className="div order-1">
             <img src={Img1} alt='about' />
           </div>
         </div>

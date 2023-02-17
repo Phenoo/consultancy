@@ -1,13 +1,19 @@
 import React from 'react'
 import BlogContainer from '../components/Blogs/BlogContainer'
 import BlogHome from '../components/Blogs/BlogHome'
+import Search from '../components/Search'
+import Helmet from 'react-helmet'
 
-import {AiOutlineSearch} from 'react-icons/ai'
 
 
 const Blogs = () => {
   return (
     <div className="blogs">
+      <Helmet>
+        <title>
+          Gold Sycamore | Blogs
+        </title>
+      </Helmet>
       <BlogHome />
       <section>
         <div className="button-container flex ">
@@ -18,19 +24,7 @@ const Blogs = () => {
           <button className="round">article 4</button>
           <button className="round">article 5</button>
         </div>
-        <div className="search">
-          <form >
-            <div className="form-input">
-              <div className='flex'>
-                <AiOutlineSearch />
-                <input type="email" placeholder='Search article' required />
-              </div>
-              <button className='button'>
-                search
-              </button>
-              </div>
-          </form>
-        </div>
+        <Search />
         <BlogContainer />
       </section>
     </div>

@@ -1,36 +1,13 @@
 import React from 'react'
-import { AiOutlineStar } from 'react-icons/ai'
 
+import CoursesCont from './CoursesCont'
 
 import Img1 from '../../assets/coach.webp'
-import Img2 from '../../assets/courses.webp'
 import Img3 from '../../assets/train.webp'
 import Img4 from '../../assets/consult.webp'
 
 const ServiceOffer = () => {
-  const data = [{
-    id: 1,
-    image: Img1,
-    name: 'trainings',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },
-  {
-    id: 2,
-    image: Img2,
-    name: 'courses',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },{
-    id:3,
-    image: Img3,
-    name: 'coaching',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },{
-    id: 4,
-    image: Img4,
-    name: 'consultation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  }
-  ]
+
   return (
     <div className="service-container">
       <section>
@@ -39,10 +16,10 @@ const ServiceOffer = () => {
             trainings
           </h4>
           <div className="grid">
-            <div className='order-2'>
+            <div className='order-1'>
               <img src={Img3} alt="item" />
             </div>
-            <div className='order-1'>
+            <div className='order-2'>
               <p>
               Typically, a business's owner is not the person who gets in touch with clients first. Most likely, it's a staff.
               <br />
@@ -65,37 +42,14 @@ const ServiceOffer = () => {
           <p>
           Our courses are simple to execute and comprehend. Although it might not have the individualized attention that a consulting session offers, courses provide solutions to more general, everyday business problems
           </p>
-          <div className="courses-cont">
-            <div className="wrap">
-              {
-                data.map(item => {
-                  return <div className="item" key={item.id}>
-                    <img src={Img2} alt="item" />
-                    <div className="text">
-                      <h4>
-                        Growth Strategy And Business Model
-                      </h4>
-                      <div className="flex">
-                        <p>
-                          <AiOutlineStar />
-                        </p>
-                        <p>
-                          4.5 (126)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                })
-              }
-            </div>
-          </div>
+            <CoursesCont />
         </article>
         <article  className='article'>
           <h4 className="headline">
             coaching
           </h4>
           <div className="grid">
-            <div className=''>
+            <div className='order-2'>
               <p>
               From working with previous clients, we observed that social interactions affect learning habits. 
               <br />
@@ -106,7 +60,7 @@ const ServiceOffer = () => {
                 If you learn best in vibrant environments made up of brilliant entrepreneurs, our coaching program was designed just for you.              
               </p>
             </div>
-            <div>
+            <div className='order-1'>
               <img src={Img1} alt="courses" />
             </div>
           </div>
@@ -116,10 +70,10 @@ const ServiceOffer = () => {
                 consultation
           </h4>
           <div className='grid'>
-            <div className='prder-2'>
+            <div className=''>
               <img src={Img4} alt='offer' /> 
             </div>
-            <div className='order-1'>
+            <div className=''>
               <p>
                 It's possible that you've tried a number of self-help techniques and free workshops that didn't work for you. You may have even spent hours searching Google and watching YouTube videos in an attempt to solve a specific business problem.
                 <br />

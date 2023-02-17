@@ -5,6 +5,9 @@ const BlogHome = () => {
     <div className="blog-home home">
       <section>
         <div className="home-text">
+          <h6>
+            Blogs
+          </h6>
           <h2>
             stay updated with our latest contents
           </h2>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Playfair+Display&family=Inter&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Libre+Franklin&family=Inter&family=Open+Sans&family=Poppins&display=swap');
 $wine: #3f0b21;
 $gold: #dbad52;
 *,
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 p,
@@ -43,7 +43,7 @@ input,
 label,
 a,
 li {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 p {
@@ -53,8 +53,6 @@ p {
 img {
     width: 100%;
     height: 100%;
-    max-height: 400px;
-    object-fit: cover;
 }
 
 a {
@@ -99,10 +97,11 @@ nav {
     }
     ul {
         gap: 1rem;
-    }
-    a {
-        text-transform: capitalize;
-        font-size: 1.25rem;
+        a {
+            text-transform: capitalize;
+            font-size: 1rem;
+            color: #777;
+        }
     }
 }
 
@@ -114,6 +113,9 @@ nav {
     width: 200px;
     margin-bottom: -1rem;
     margin-left: -1rem;
+    img {
+        height: auto;
+    }
 }
 
 .mobile {
@@ -153,6 +155,8 @@ nav {
     }
     h6 {
         font-size: 1rem;
+        margin: 1rem 0;
+        font-weight: 500;
         text-transform: capitalize;
     }
     p {
@@ -160,6 +164,7 @@ nav {
         margin: 0 auto;
         line-height: 1.5rem;
         text-transform: capitalize;
+        margin-top: 1.5rem;
     }
     button {
         margin-top: 1rem;
@@ -221,6 +226,13 @@ nav {
     p {
         margin: 0 auto;
         max-width: 700px;
+        font-weight: 500;
+    }
+}
+
+.header {
+    p {
+        font-weight: 500;
     }
 }
 
@@ -270,7 +282,7 @@ nav {
             width: 250px;
             transition: all 0.4s ease;
             img {
-                height: 225px;
+                height: 165px;
                 object-fit: cover;
                 border-radius: 5px;
             }
@@ -366,6 +378,9 @@ nav {
     .swiperslide {
         width: auto;
     }
+    .swiper-pagination{
+        display: none;
+    }
 }
 
 .faq {
@@ -406,6 +421,7 @@ nav {
             width: 100%;
         }
         svg {
+            color: $gold;
             font-size: 1.4rem;
         }
         h5 {
@@ -427,9 +443,16 @@ footer {
     .footer {
         padding: 4rem 0 0;
         .footer-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1.5rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 31px;
+            width: 100%;
+            flex-wrap: wrap;
+            // justify-content: space-evenly;
+            // display: grid;
+            // grid-template-columns: repeat(5, 1fr);
         }
         .footer-desc {
             p {
@@ -467,7 +490,7 @@ footer {
                 flex-direction: column;
                 gap: 0.4rem;
                 text-transform: capitalize;
-                width: 150px;
+                width: 120px;
             }
             h6 {
                 text-transform: uppercase;
@@ -485,6 +508,7 @@ footer {
                 border-radius: 5px;
                 padding: 1rem;
                 margin-bottom: 1rem;
+                width: 200px;
             }
         }
         .foot-mail {
@@ -581,7 +605,8 @@ footer {
     .about-story {
         margin: 2rem 0;
         p {
-            line-height: 1.3rem;
+            font-weight: 400;
+            line-height: 28px;
         }
     }
     .about-vision {
@@ -612,8 +637,8 @@ footer {
         padding: 2rem 0;
         width: 100%;
         img {
-            // object-fit: contain;
-            width: 100%;
+            width: 560px;
+            height: 616px;
         }
         .text {
             display: flex;
@@ -625,6 +650,9 @@ footer {
             h4,
             p {
                 text-align: center;
+            }
+            p {
+                font-weight: 500;
             }
         }
     }
@@ -715,50 +743,6 @@ footer {
             line-height: 1.7rem;
         }
     }
-    .courses-cont {
-        .wrap {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            align-items: center;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-        .item {
-            width: 250px;
-            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3), 0 3px 7px 0 rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            &:hover {
-                transform: scale(0.9);
-                transition: all 0.3s ease;
-            }
-            .text {
-                padding: 1rem 10px;
-                h4 {
-                    font-size: 1.2rem;
-                }
-            }
-            .flex {
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                margin-top: 1rem;
-                svg {
-                    font-size: 1rem;
-                }
-                p {
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-}
-
-/////Template//////////////////////
-.template {
-    height: 100vh;
 }
 
 /////Contact//////////////////////
@@ -821,6 +805,12 @@ footer {
 }
 
 /////blog//////////////////////
+.blogs {
+    .search {
+        margin: 1rem auto;
+    }
+}
+
 .blog-home {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/blogbg.webp);
     background-position: 50%;
@@ -841,7 +831,7 @@ footer {
 
 .blog-card {
     width: 340px;
-    height: 410px;
+    height: 420px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
     transition: all 0.3s ease;
@@ -852,14 +842,14 @@ footer {
         transform: scale(0.9);
     }
     .text {
-        padding: 1rem;
+        padding: 10px;
     }
     h6,
     h5 {
         color: #808080;
     }
     h4 {
-        margin: 10px 0;
+        margin: 8px 0;
     }
     img {
         border-radius: 10px 10px 0 0;
@@ -899,7 +889,6 @@ footer {
     align-items: center;
     justify-content: center;
     max-width: 700px;
-    margin: 2rem auto;
     form {
         width: 100%;
     }
@@ -918,6 +907,71 @@ footer {
         border-radius: 0;
     }
 }
+
+.space-between {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.courses-cont {
+    padding: 2rem 0;
+    width: 100%;
+    button{
+        margin: 2rem auto;
+    }
+    .wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 29px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+
+.course-card {
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
+    border-radius: 8px;
+    padding: 0px 0px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+    }
+    .text {
+        padding: 1rem 10px 0;
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 1rem;
+        svg {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .teamswiper {
+        .swiper-pagination{
+            display: flex;
+        }
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     section {
@@ -961,7 +1015,6 @@ footer {
                 a {
                     margin-bottom: 1rem;
                     font-size: 1.35rem;
-                    color: #111;
                 }
             }
         }
@@ -1006,14 +1059,16 @@ footer {
     }
     footer {
         .footer {
-            .footer-container {
-                grid-template-columns: repeat(3, 1fr);
-            }
             .form-input {
                 input {
                     width: 90%;
                 }
             }
+        }
+    }
+    .about-page {
+        .grid {
+            place-items: center;
         }
     }
     .headline {
@@ -1028,6 +1083,13 @@ footer {
     .order-1 {
         order: 1;
     }
+    .service-page {
+        .service-container {
+            .headline {
+                text-align: center;
+            }
+        }
+    }
 }
 
 .img-nav {
@@ -1041,7 +1103,22 @@ footer {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .about-page {
+        .about-grid {
+            img {
+                width: 343px;
+                height: 320px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
+    p {
+        font-size: 14px;
+    }
     section {
         width: 95%;
     }
@@ -1084,7 +1161,6 @@ footer {
     }
     .blog-card {
         width: 300px;
-        height: 400px;
     }
     .news {
         .news-cont {
@@ -1157,11 +1233,22 @@ footer {
     footer {
         .footer {
             .footer-container {
-                grid-template-columns: repeat(1, 1fr);
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 1.5rem;
             }
         }
     }
     .copy {
         font-size: 0.7rem;
+    }
+    .courses-cont {
+        .item {
+            width: 300px;
+        }
+    }
+    .space-between {
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }

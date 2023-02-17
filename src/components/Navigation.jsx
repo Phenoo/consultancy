@@ -36,6 +36,13 @@ const Navigation = () => {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to='/courses'
+                    className={({isActive}) => (isActive ? 'active' : '') }
+                  >
+                    courses
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to='/blogs'
                     className={({isActive}) => (isActive ? 'active' : '') }
                   >

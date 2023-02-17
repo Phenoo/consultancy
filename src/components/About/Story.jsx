@@ -2,14 +2,14 @@ import Img1 from '../../assets/story.webp'
 const Story = () => {
   return (
     <div className="about-story">
-      <h4 className="headline">
-        our story
-      </h4>
       <div className="grid">
-      <div className="image order-2">
+      <div className="image">
           <img src={Img1} alt='stroy' />
         </div>
-        <div className="text order-1">
+        <div className="text">
+          <h4 className="headline">
+          our story
+          </h4>
           <p>
           When we work together to provide your business solutions, we are not attempting to alter the norm. In reality, we guarantee that the business objectives are successfully carried out.
           </p>

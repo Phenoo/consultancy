@@ -43,7 +43,7 @@ const Home = () => {
           </p>
           <button className="button">
             <Link to='/about'>
-              learn more
+              grow now
             </Link>
           </button>
         </div>

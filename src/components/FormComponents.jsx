@@ -63,6 +63,9 @@ const FormComponents = () => {
             <button type="submit" className="button">  
             send us a message
             </button>
+            <p>
+            We’ll be in touch soon
+            </p>
           </form>
         </div>
       </div>
