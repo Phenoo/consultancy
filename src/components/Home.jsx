@@ -36,8 +36,8 @@ const Home = () => {
         />
           </h2>
           <p>
-            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ratione et! Magni, placeat expedita non ea ullam eligendi a architecto. */}
-          </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ratione et! Magni, placeat expedita non ea ullam eligendi a architecto.
+          </p> 
           <p>
             we are your biggest fan.
           </p>
