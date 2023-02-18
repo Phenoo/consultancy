@@ -70,7 +70,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className='foot'>
+              <div className='foot foot-input '>
                 <h6>
                   join our mailing list
                 </h6>

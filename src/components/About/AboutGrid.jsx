@@ -68,11 +68,12 @@ const AboutGrid = () => {
               </p>
           </div>
           <br />
+          <br />
+          <br />
           <div>
             <button className="button">
               let's collaborate
             </button>
-            <br />
           </div>
           </div>
           <div className="div order-1">
