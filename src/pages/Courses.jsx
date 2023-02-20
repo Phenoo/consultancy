@@ -39,7 +39,7 @@ const Courses = () => {
           Gold Sycamore | Courses
         </title>
       </Helmet>
-      <div className="blog-home home">
+      <div className="courses-home home">
       <section>
         <div className="home-text">
           <h6>

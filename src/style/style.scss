@@ -450,7 +450,7 @@ footer {
             flex-direction: row;
             align-items: flex-start;
             padding: 0px;
-            gap: 70px;
+            gap: 60px;
             max-width: 1240px;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -947,6 +947,20 @@ footer {
     padding: 1rem 0;
 }
 
+.courses-home {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/coursesbg.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    // height: 90vh;
+    padding: 2rem 0;
+}
+
 .courses-cont {
     padding: 2rem 0;
     width: 100%;
@@ -1100,7 +1114,7 @@ footer {
     footer {
         .footer {
             .footer-container {
-                gap: 50px;
+                gap: 40px;
             }
         }
     }
