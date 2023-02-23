@@ -1019,6 +1019,88 @@ footer {
     }
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+
+    .modal-section{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-container {
+        position: relative;
+        width: 490px;
+        height: 400px;
+        margin: 0 auto;        
+        
+        background: #111111;
+        color: #fff;
+        box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
+        color: #111;
+        border-radius: 8px;
+        padding: 2rem;
+        @media screen and (max-width: 500px) {
+            width: 330px;
+
+        }
+    }
+    form {
+        margin-top: 2.5rem;
+        .form-input {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+            label{
+                color: #fff;
+            }
+            input {
+                border-radius: 4px;
+                width: 92%;
+                padding: 1rem;
+                background: #fff;
+            }
+        }
+    }
+    .text{
+        text-align: center;
+    }
+    h4 {
+        color: #fff;
+        margin-bottom: 8px;
+        font-size: 30px;
+        @media screen and (max-width: 500px) {
+            font-size: 27px;
+        }
+        
+    }
+    p{
+        color: #fff;
+        font-size: 12px;
+
+    }
+    .btn-div{
+        width: 100%;
+        margin-top: 2.5rem;
+        button{
+             margin: 0 auto;
+        }
+        @media screen and (max-width: 500px) {
+            margin-top: 2rem;
+        }
+        
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .teamswiper {
         .swiper-pagination {

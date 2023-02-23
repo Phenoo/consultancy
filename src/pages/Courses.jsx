@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Search from '../components/Search'
+import Modal from '../components/Modal'
 import Helmet from 'react-helmet'
 import { AiOutlineStar } from 'react-icons/ai'
 
@@ -8,6 +9,8 @@ import Img2 from '../assets/lock.png'
 
 
 const Courses = () => {
+  const [modal, setModal] = useState(false)
+  
     const data = [
       {
       id: 1,
@@ -67,7 +70,7 @@ const Courses = () => {
             <div className="wrap">
               {
                 data.map(item => {
-                  return <div className="course-card" key={item.id}>
+                  return <div className="course-card" key={item.id} onClick={() => setModal(!modal)}>
                     <div className='image'>
                       <img src={item.image} alt="item" />
                     </div>
@@ -91,6 +94,8 @@ const Courses = () => {
       </div>
      
     </section>
+    {modal && <Modal setModal={setModal} modal={modal} />}
+
     </div>
   )
 }
