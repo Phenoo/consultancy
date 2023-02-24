@@ -1,22 +1,20 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import BlogCard from './Blogs/BlogCard'
+import {client} from '../lib/client'
 
 const Article = () => {
-  const data = [{
-    id: 1,
-    name: 'trainings',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },
-  {
-    id: 2,
-    name: 'courses',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
-  },{
-    id:3,
-    name: 'coaching',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni sunt tempora et, eos id minima quasi suscipit doloremque cupiditate'
+  const [posts, setPosts] = useState([])
+  const fetchData = async () => {
+    const query = '*[_type == "post"]';
+    const post = await client.fetch(query);
+    setPosts(post);
+    console.log(post);
   }
-  ]
+  useEffect(() => {
+    fetchData();
+  }, [])
+
+  const filterItems = posts?.filter((item, index) => index < 3);
   return (
     <div className="article-section">
       <section>
@@ -29,13 +27,11 @@ const Article = () => {
           </p>
         </div>
         <div className="article-container fourgrid">
-          {
-            data.map(item => {
-              return (
-                <BlogCard key={item.id} item={item} />
+        {filterItems &&
+              filterItems?.map(
+                (post) => <BlogCard key={post._id} post={post} />
               )
-            })
-          }
+            }
         </div>
       </section>
     </div>

@@ -3,8 +3,9 @@ import {  useParams} from 'react-router-dom'
 import {client, urlFor} from '../lib/client'
 import BlockContent from '@sanity/block-content-to-react'
 import Moment from 'moment'
+import Helmet from 'react-helmet'
 
-import Comment from '../components/Comment'
+
 
 const Single = () => {
   const [single, setSingle] = useState(null);
@@ -33,11 +34,17 @@ const Single = () => {
 
               return (
                 <article className="single-container" key={item.slug}>
-                  <div className="center">
+                        <Helmet>
+                        <title>
+                          Gold Sycamore | {item.title}
+                        </title>
+                      </Helmet>
+                    <h6 className='grey'>
+                    Posted on  {formatDate}
+                    </h6>
                     <h4 className='headline'>
                       {item.title}
                     </h4>
-                  </div>
                   <div className="center">
                     <div className="image">
                       {item.mainImage && 
@@ -47,17 +54,15 @@ const Single = () => {
                   </div>
                   <div>
                     <h6 className='author'>
-                      {item.author.name} 
+                      by  Ukusare Faith 
                     </h6>
-                    <h6 className='grey'>
-                      {formatDate}
-                    </h6>
+
                   </div>
                   <br />
                   <article>
                     <BlockContent 
                       blocks={item.body}
-                      projectId="8csevbsr"
+                      projectId="ww69fva0"
                       dataset="production"
                     />
                   </article>
@@ -66,7 +71,6 @@ const Single = () => {
             })
           }
         </article>
-        <Comment />
       </section>
     </div>
   )

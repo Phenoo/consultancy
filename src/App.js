@@ -9,7 +9,7 @@ import Navigation from "./components/Navigation";
 
 import ScrollUp from "./components/ScrollUp";
 import Blogs from "./pages/Blogs";
-// import Single from "./pages/Single";
+import Single from "./pages/Single";
 
 
 
@@ -25,7 +25,7 @@ function App() {
         <Route path='/services' element={<ServicePage /> } />
         <Route path='/blogs' element={<Blogs /> } />
         <Route path='/courses' element={<Courses /> } />
-        {/* <Route path='/blog/:slug' element={<Single /> } /> */}
+        <Route path='/blog/:slug' element={<Single /> } />
       </Routes>
       <ScrollUp />
       <Footer />

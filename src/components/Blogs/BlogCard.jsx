@@ -1,26 +1,32 @@
 import React from 'react'
-import Img1 from '../../assets/blogcard.webp'
+import Moment from 'moment'
+import {urlFor} from '../../lib/client'
+import { Link } from 'react-router-dom'
 
-const BlogCard = ({item}) => {
+const BlogCard = ({post}) => {
+  const formatDate = Moment(post.publishedAt).format("MMM Do, YYYY.")
+
   return (
     <article className="blog-card">
       <div className="image">
-        <img src={Img1} alt="blog-card" />
+      <img src={urlFor(post.mainImage)} alt="blog-card" />
       </div>
       <div className="text">
         <h6>
-          15th November, 2022
+          {formatDate}
         </h6>
         <h4>
-          Strategy and growth solutions for business
+          {post.title}
         </h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit suscipit vero magni inventore, obcaecati esse similique!
+          {post.description}
         </p>
         <br />
-        <h5>
-          5 minutes read
-        </h5>
+        <span>
+          <Link to={`/blog/${post.slug.current}`}>
+            read more
+          </Link>
+        </span>
       </div>
     </article>
   )

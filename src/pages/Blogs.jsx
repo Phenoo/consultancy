@@ -7,6 +7,7 @@ import Helmet from 'react-helmet'
 
 
 const Blogs = () => {
+
   return (
     <div className="blogs">
       <Helmet>
