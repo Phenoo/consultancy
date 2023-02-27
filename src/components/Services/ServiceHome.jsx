@@ -5,9 +5,6 @@ const ServiceHome = () => {
     <div className="home service-home">
       <section>
         <div className="home-text">
-          <h6>
-            our services
-          </h6>
           <h2>
           Either you focus on your competitors or you focus on YOU!
           </h2>

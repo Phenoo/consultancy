@@ -45,9 +45,6 @@ const Courses = () => {
       <div className="courses-home home">
       <section>
         <div className="home-text">
-          <h6>
-            courses
-          </h6>
           <h2>
             Get Solutions To General, Everyday Business Problems
           </h2>
@@ -66,7 +63,7 @@ const Courses = () => {
         </div>
         <Search place='Search courses' />
       </div>
-      <div className="courses-cont">
+      <div className="courses-cont margin">
             <div className="wrap">
               {
                 data.map(item => {

@@ -5,9 +5,6 @@ const ContactHome = () => {
     <div className="home contact-home">
       <section>
         <div className="home-text">
-          <h6>
-            contact us
-          </h6>
           <h2>
             how can we help you?
           </h2>

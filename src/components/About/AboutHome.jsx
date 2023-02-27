@@ -5,9 +5,6 @@ const AboutHome = () => {
     <div className='about-home home'>
       <section>
         <div className="home-text">
-          <h6>
-            about us
-          </h6>
           <h2>
             your growth is our growth
           </h2>

@@ -63,11 +63,6 @@ const Footer = () => {
                       services
                     </Link>
                   </li>
-                  <li>
-                    <Link to='/template'>
-                      templates
-                    </Link>
-                  </li>
                 </ul>
               </div>
               <div className='foot foot-input '>
@@ -90,9 +85,6 @@ const Footer = () => {
                     <a href="mailto:hello@goldsycamore.com">
                       hello@goldsycamore.com
                     </a>
-                  </li>
-                  <li>
-                    <a href="tel">Phone Number</a>
                   </li>
                 </ul>
               </div>

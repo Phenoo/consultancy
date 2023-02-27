@@ -11,7 +11,6 @@ const Story = () => {
           our story
           </h4>
           <p>
-          When we work together to provide your business solutions, we are not attempting to alter the norm. In reality, we guarantee that the business objectives are successfully carried out.
           </p>
           <br />
           <p>

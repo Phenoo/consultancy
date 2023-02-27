@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-
+import { CgDanger } from 'react-icons/cg'
 
 const  Modal = ({setModal, modal}) => {
   const [email, setEmail] = useState("");
@@ -15,6 +15,7 @@ const  Modal = ({setModal, modal}) => {
     <div className="modal">
       <div className='modal-section'>
         <div className='modal-container'>
+          <CgDanger />
           <div className='text'>
             <h4>
               Interested in this course? 
@@ -40,10 +41,14 @@ const  Modal = ({setModal, modal}) => {
                   onChange={(e) => setEmail(e.target.value)}
                   />
               </div>
-              <div className='btn-div'>
+              <div className='btn-div flex'>
+              <button onClick={() => setModal(!modal)} className=' white'>
+                  cancel
+                </button>
                 <button onClick={handleSubmit} className='button'>
                 join waitlist
                 </button>
+                
               </div>
             </form>
             

@@ -20,9 +20,7 @@ const FormComponents = () => {
           </a>
           <br />
           <br />
-          <a href="tel:+2348012345678">
-            +234 801 2345 678
-          </a>
+          
         </div>
         <div>
           <h4 className="headline">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Libre+Franklin&family=Inter&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Libre+Franklin&family=Spectral&family=Open+Sans&family=Radley&display=swap');
 $wine: #3f0b21;
 $gold: #dbad52;
 *,
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Spectral', sans-serif;
 }
 
 p,
@@ -43,11 +43,11 @@ input,
 label,
 a,
 li {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Radley', sans-serif;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 18px;
 }
 
 img {
@@ -182,12 +182,13 @@ nav {
         gap: 5px;
         max-width: 700px;
         margin: 10px auto;
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Radley', sans-serif;
         justify-content: center;
         span {
             text-transform: capitalize;
             height: 100px;
-            font-family: 'Libre Franklin', sans-serif;
+            font-family: 'Radley', sans-serif;
+            color: $gold;
         }
     }
 }
@@ -197,9 +198,9 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 2rem 0;
-    // img {
-    //     object-fit: contain;
-    // }
+    img {
+        object-fit: contain;
+    }
 }
 
 .headline {
@@ -239,6 +240,32 @@ nav {
     }
 }
 
+.gold {
+    background: $gold;
+    padding: 2rem 0;
+}
+
+.black {
+    background: #111;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.white {
+    background-color: #fff;
+    color: #111;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.3s ease;
+    }
+}
+
 .button-container {
     display: flex;
     gap: 1rem;
@@ -247,11 +274,12 @@ nav {
 
 .button {
     background: $gold;
-    color: #fff;
+    color: #111;
     padding: 12px 24px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
     font-size: 14px;
+    font-weight: 700;
     transition: all 0.3s ease;
     &:hover {
         opacity: 0.8;
@@ -793,8 +821,8 @@ footer {
 }
 
 .contact-page {
-    background: #f9f9f9;
-    color: #111;
+    background-color: #111;
+    color: #fff;
     .grid {
         place-items: center;
     }
@@ -806,10 +834,9 @@ footer {
         margin: 10px 0;
     }
     .form-container {
-        color: #111;
+        color: #fff;
         padding: 1rem;
         border-radius: 10px;
-        margin: 2rem 0;
         .headline {
             margin: 0;
         }
@@ -873,6 +900,7 @@ footer {
         transform: scale(0.9);
     }
     .text {
+        height: 100%;
         padding: 10px;
     }
     h6,
@@ -881,6 +909,7 @@ footer {
     }
     h4 {
         margin: 8px 0;
+        height: 35px;
     }
     img {
         border-radius: 10px 10px 0 0;
@@ -888,7 +917,12 @@ footer {
         height: 50%;
     }
     p {
+        height: 60px;
         font-size: 0.9rem;
+    }
+    a {
+        color: $gold;
+        font-weight: 700;
     }
 }
 
@@ -976,6 +1010,10 @@ footer {
         justify-content: center;
         margin-top: 2rem;
     }
+}
+
+.margin {
+    margin-bottom: 3rem;
 }
 
 .course-card {
@@ -1144,7 +1182,7 @@ footer {
         width: 90%;
     }
     p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     nav {
         .menulist {
@@ -1291,7 +1329,7 @@ footer {
 
 @media screen and (max-width: 500px) {
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
     section {
         width: 95%;
@@ -1314,7 +1352,6 @@ footer {
         }
         p {
             width: 100%;
-            font-size: 0.8rem;
             line-height: 1rem;
         }
         .flex {
@@ -1391,7 +1428,7 @@ footer {
         }
         p {
             margin-top: 1rem;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
         .question {
             width: 100%;

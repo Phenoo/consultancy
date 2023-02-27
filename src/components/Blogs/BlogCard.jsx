@@ -19,7 +19,7 @@ const BlogCard = ({post}) => {
           {post.title}
         </h4>
         <p>
-          {post.description}
+          {post.description.substring(0, 110)}
         </p>
         <br />
         <span>
