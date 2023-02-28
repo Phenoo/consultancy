@@ -10,7 +10,7 @@ const ServiceOffer = () => {
 
   return (
     <div className="service-container">
-        <article className='article gold'>
+        <article className='article black'>
           <section>
           <h4 className="headline">
               trainings
@@ -49,7 +49,7 @@ const ServiceOffer = () => {
           </section>
 
         </article>
-        <article  className='article black'>
+        <article  className='article gold'>
           <section>
           <h4 className="headline">
               coaching

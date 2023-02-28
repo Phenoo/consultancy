@@ -499,18 +499,18 @@ footer {
                     gap: 1rem;
                     flex-direction: row;
                 }
-                li {
+                a {
                     display: flex;
                     align-items: center;
                     padding: 10px;
                     color: $gold;
                     border-radius: 50%;
                     cursor: pointer;
-                    transition: all 0.3s ease;
+                    transition: all 0.2s ease;
                     border: 1px solid $gold;
                     &:hover {
-                        transition: all 0.3s ease;
-                        transform: scale(0.9);
+                        transition: all 0.2s ease;
+                        transform: scale(0.95);
                         color: $wine;
                         background: $gold;
                     }
@@ -946,6 +946,7 @@ footer {
         border: none;
         background: $gold;
         color: #fff;
+        font-weight: 800;
     }
 }
 

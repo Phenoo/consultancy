@@ -3,7 +3,6 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { NavLink, Link } from 'react-router-dom'
 import Logo from './Logo'
 
-import Img1 from '../assets/certify.png'
 
 const Navigation = () => {
   const [navbar, setNavbar] = useState(false);
@@ -72,11 +71,7 @@ const Navigation = () => {
               {
                 navbar ? <FaTimes /> : <FaBars />
               }
-              {
-                navbar && <div className='img-nav'>
-                  <img src={Img1} alt="done" />
-                </div>
-              }
+              
             </button>
           </header>
         </section>

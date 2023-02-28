@@ -1,5 +1,6 @@
 import React from 'react'
-import {  FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import {  FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
+import {  BsLinkedin } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 
@@ -17,13 +18,24 @@ const Footer = () => {
               <div className="social">
                 <ul>
                     <li className="facebook">
-                      <FaFacebook />
+                      <a href='https://facebook.com/thegoldsycamore?mibextid=ZbWKwL'>
+                        <FaFacebook />
+                      </a>
                     </li>
                     <li className="instagram">
-                      <FaInstagram />
+                      <a href='https://instagram.com/goldsycamore?igshid=NTE5MzUyOTU='>
+                        <FaInstagram />
+                      </a>
                     </li>
                     <li className="twitter">
-                      <FaTwitter />
+                      <a href='https://linkedin.com/company/goldsycamore/'>
+                        <BsLinkedin />
+                      </a>
+                    </li>
+                    <li className="twitter">
+                      <a href='https://youtube.com/@goldsycamore'>
+                        <FaYoutube />
+                      </a>
                     </li>
                 </ul>
               </div>
