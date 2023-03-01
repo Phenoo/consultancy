@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
+import ServiceModal from '../ServiceModal'
 
 const ServiceHome = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="home service-home">
       <section>
@@ -10,11 +13,13 @@ const ServiceHome = () => {
           </h2>
           <p>
           </p>
-          <button className="button">
+          <button className="button" onClick={() => setModal(!modal)}>
             explore
           </button>
         </div>
       </section>
+      {modal && <ServiceModal setModal={setModal} modal={modal} />}
+
     </div>
   )
 }

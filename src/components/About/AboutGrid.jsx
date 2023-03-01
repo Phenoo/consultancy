@@ -1,5 +1,5 @@
 import React from 'react'
-import Img1 from '../../assets/aboutus.webp'
+import Img1 from '../../assets/about.webp'
 
 
 const AboutGrid = () => {

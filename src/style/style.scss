@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Libre+Franklin&family=Spectral&family=Open+Sans&family=Radley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Jost&family=Libre+Franklin&family=Spectral&family=Open+Sans&family=Radley&display=swap');
 $wine: #3f0b21;
 $gold: #dbad52;
 *,
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Spectral', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 p,
@@ -182,12 +182,12 @@ nav {
         gap: 5px;
         max-width: 700px;
         margin: 10px auto;
-        font-family: 'Radley', sans-serif;
+        font-family: 'Playfair Display', sans-serif;
         justify-content: center;
         span {
             text-transform: capitalize;
             height: 100px;
-            font-family: 'Radley', sans-serif;
+            font-family: 'Playfair Display', sans-serif;
             color: $gold;
         }
     }
@@ -211,8 +211,8 @@ nav {
 }
 
 .tag {
-    background: $wine;
-    color: $gold;
+    background: $gold;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -618,7 +618,7 @@ footer {
 /////about//////////////////////
 /// 
 .about-home {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/consult.webp);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/aboutbg.webp);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1057,6 +1057,94 @@ footer {
         }
     }
 }
+.service-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    .modal-section {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin: 0;
+    }
+    .svg{
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        svg{
+            font-size: 1.25rem
+        }
+    }
+    .modal-container {
+        position: relative;
+        width: 490px;
+        height: auto;
+        margin: 0 auto;
+        background: #111111;
+        color: #fff;
+        box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
+        color: #111;
+        border-radius: 8px;
+        padding: 2rem;
+        @media screen and (max-width: 500px) {
+            width: 330px;
+        }
+    }
+    form {
+        margin-top: .5rem;
+        .form-input {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+            label {
+                color: #fff;
+            }
+            input {
+                border-radius: 4px;
+                width: 92%;
+                padding: 1rem;
+                background: #fff;
+            }
+        }
+    }
+    .text {
+        text-align: center;
+    }
+    h4 {
+        color: #fff;
+        margin-bottom: 8px;
+        font-size: 30px;
+        @media screen and (max-width: 500px) {
+            font-size: 27px;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 12px;
+    }
+    .btn-div {
+        width: 100%;
+        margin-top: 2.5rem;
+        button {
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 500px) {
+            margin-top: 2rem;
+        }
+    }
+}
+
 
 .modal {
     position: fixed;
