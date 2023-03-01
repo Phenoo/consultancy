@@ -14,7 +14,7 @@ const ServiceHome = () => {
           <p>
           </p>
           <button className="button" onClick={() => setModal(!modal)}>
-            explore
+            book now
           </button>
         </div>
       </section>

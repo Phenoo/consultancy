@@ -8,6 +8,7 @@ const  Modal = ({setModal, modal}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setName("")
     setEmail("");
     setModal(!modal);
   }
@@ -32,6 +33,8 @@ const  Modal = ({setModal, modal}) => {
                 <input type="email" placeholder='Enter Your Full Name'
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  required
+                  
                   />
               </div>
               <div className="form-input">
@@ -39,14 +42,15 @@ const  Modal = ({setModal, modal}) => {
                 <input type="email" placeholder='Enter Your Email'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                   />
               </div>
               <div className='btn-div flex'>
               <button onClick={() => setModal(!modal)} className=' white'>
                   cancel
                 </button>
-                <button onClick={handleSubmit} className='button'>
-                join waitlist
+                <button type='submit' className='button'>
+                 join waitlist
                 </button>
                 
               </div>

@@ -1,30 +1,28 @@
 import React from 'react';
 
-import Img1 from '../assets/train.webp'
 import Img2 from '../assets/courses.webp'
-import Img3 from '../assets/coach.webp'
-import Img4 from '../assets/consult.webp'
 
 const Offer = () => {
   const data = [{
     id: 1,
-    icon: Img1,
+    icon: <img src='https://source.unsplash.com/vbxyFxlgpjM' alt="item" />,
     name: 'trainings',
     desc: 'With our trainings, improve the leadership, marketing, and customer experience skills of your team.'
   },
   {
-    id: 2,
-    icon: Img2,
+    id:2,
+    icon: <img src='https://source.unsplash.com/46bom4lObsA' alt="item" />,
+    name: 'coaching',
+    desc: 'We connect you to a seasoned business mentor or coach who has useful resources that are relevant to you.'
+  },
+  {
+    id: 3,
+    icon: <img src={Img2} alt='offer' />,
     name: 'courses',
     desc: 'We have courses that suits your needs whether you are a new or aspiring entrepreneur or an established one. '
   },{
-    id:3,
-    icon: Img3,
-    name: 'coaching',
-    desc: 'We connect you to a seasoned business mentor or coach who has useful resources that are relevant to you.'
-  },{
     id: 4,
-    icon: Img4,
+    icon:  <img src='https://source.unsplash.com/IgUR1iX0mqM' alt='offer' />,
     name: 'consultation',
     desc: 'Get 1:1 expert advice and strategies for implementing solutions for your business challenges.'
   }
@@ -46,7 +44,7 @@ const Offer = () => {
             data.map((item, index )=> (
               <li className="box" key={index}>
                 <span>
-                  <img src={item.icon} alt='offer' />
+                  {item.icon}
                 </span>
                 <h6>{item.name}</h6>
                 <p>{item.desc}</p>

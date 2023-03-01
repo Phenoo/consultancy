@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Img1 from '../../assets/courses.webp'
-import Img2 from '../../assets/lock.png'
 
 
 import {AiOutlineStar} from 'react-icons/ai'
@@ -16,25 +15,25 @@ const CoursesCont = () => {
   const data = [
     {
     id: 1,
-    image: Img1,
+    image:  <img src={Img1} alt="item" />,
     name: 'side hustle to main gig',
     rating: ' 4.5 (126)'
   },
   {
     id: 2,
-    image: Img1,
+    image:  <img src='https://source.unsplash.com/26MJGnCM0Wc' alt="item" />,
     name: 'Launch Like a Pro: Sales, Marketing and Profit',
     rating: ' 4.5 (126)'
   },{
     id:3,
-    image: Img1,
+    image:  <img src='https://source.unsplash.com/5fNmWej4tAA' alt="item" />,
     name: 'The Ultimate Customer Experience',
     rating: ' 4.5 (126)'
   },{
     id: 4,
-    image: Img2,
-    name: 'Course Coming Soon!',
-    rating: '---'
+    image:  <img src={Img1} alt="item" />,
+    name: 'Business Foundation Matrix (BFM)',
+    rating: '4.5 (126)'
   }
   ]
   return (
@@ -55,7 +54,7 @@ const CoursesCont = () => {
                   <SwiperSlide className="swiperslide" key={item.id}>
                     <article className="course-card">
                       <div className='image'>
-                        <img src={item.image} alt="item" />                        
+                        {item.image}
                       </div>
                       <div className="text">
                         <h4>

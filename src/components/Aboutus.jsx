@@ -1,5 +1,4 @@
 import React from 'react'
-import Img1 from '../assets/aboutus.webp'
 import { Link } from 'react-router-dom'
 
 
@@ -9,7 +8,7 @@ const Aboutus = () => {
       <section>
         <div className='grid'>
           <div className='order-2'>
-            <img src={Img1} alt='about' />
+            <img src='https://source.unsplash.com/2JDDn7iSGH8' alt='about' />
           </div>
           <div className='order-1'>
             <h4 className="headline">

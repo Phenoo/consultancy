@@ -1,15 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import CoursesCont from './CoursesCont'
+import ServiceModal from '../ServiceModal'
 
-import Img1 from '../../assets/coach.webp'
-import Img3 from '../../assets/train.webp'
-import Img4 from '../../assets/consult.webp'
+
 
 const ServiceOffer = () => {
+  const [modal, setModal] = useState(false);
+
 
   return (
     <div className="service-container">
+      {modal && <ServiceModal setModal={setModal} modal={modal} />}
         <article className='article black'>
           <section>
           <h4 className="headline">
@@ -17,7 +19,7 @@ const ServiceOffer = () => {
             </h4>
             <div className="grid">
               <div className='order-1'>
-                <img src={Img3} alt="item" />
+                <img src='https://source.unsplash.com/vbxyFxlgpjM' alt="item" />
               </div>
               <div className='order-2'>
                 <p>
@@ -68,7 +70,7 @@ const ServiceOffer = () => {
                 </p>
               </div>
               <div className='order-1'>
-                <img src={Img1} alt="courses" />
+                <img src='https://source.unsplash.com/46bom4lObsA' alt="item" />
               </div>
             </div>
           </section>
@@ -80,7 +82,7 @@ const ServiceOffer = () => {
             </h4>
             <div className='grid'>
               <div className=''>
-                <img src={Img4} alt='offer' /> 
+                <img src='https://source.unsplash.com/IgUR1iX0mqM' alt='offer' /> 
               </div>
               <div className=''>
                 <p>
@@ -101,6 +103,14 @@ const ServiceOffer = () => {
             </div>
           </section>
         </article>
+        <br />
+        <section>
+          <button className="button" onClick={() => setModal(!modal)}>
+              book now
+          </button>
+        </section>
+        <br />
+        <br />
     </div>
   )
 }

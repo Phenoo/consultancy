@@ -281,7 +281,7 @@ nav {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
     &:hover {
         opacity: 0.8;
@@ -298,6 +298,9 @@ nav {
 
 .aboutus {
     margin: 4rem 0;
+    .grid{
+        place-items: center;
+    }
 }
 
 .offer {
@@ -600,8 +603,8 @@ footer {
     right: 1rem;
     bottom: 1.5rem;
     background-color: $gold;
-    color: $wine;
-    border: 1px solid $wine;
+    color: #fff;
+    border: 1px solid #fff;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -618,9 +621,9 @@ footer {
 }
 
 /////about//////////////////////
-/// 
+/// ../assets/aboutbg.webp
 .about-home {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/aboutbg.webp);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://source.unsplash.com/faEfWCdOKIg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -757,7 +760,7 @@ footer {
 
 /////Service//////////////////////
 .service-home {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/servicebg.webp);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://source.unsplash.com/p0qKsW3uqA4');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1329,7 +1332,7 @@ footer {
         }
     }
     .home {
-        height: 500px;
+        height: 410px;
         h2 {
             font-size: 28px;
             width: 90%;
@@ -1360,15 +1363,18 @@ footer {
         }
     }
     .about-page {
-        .grid {
-            flex-direction: column;
+        .about-grid{
+            .grid {
+                flex-direction: column;
+            }
         }
+
     }
     .headline {
         font-size: 1.75rem;
     }
     .mySwiper {
-        min-height: 500px;
+        height: 500px;
     }
     .order-2 {
         order: 2;
@@ -1432,7 +1438,6 @@ footer {
     }
     .home {
         width: 100%;
-        height: 500px;
         background-position: center;
         h2 {
             font-size: 1.5rem;
