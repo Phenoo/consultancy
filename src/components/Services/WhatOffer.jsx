@@ -43,11 +43,16 @@ const WhatOffer = () => {
           what we offer
         </h4>
         <p>
-        There is absolutely nothing wrong with getting inspired by other businesses on Instagram. WHere it becomes a concern is when you are constantly tweaking your brand/business messages to look like theirs.
+        There is absolutely nothing wrong with getting inspired by other businesses on Instagram. 
+        Where it becomes a concern is when you are constantly tweaking your brand/business messages to look like theirs.
         </p>
         <br />
         <p>
-        In running any business, think sustainability, longevity and transgenerational.
+        In running any business, think sustainability, longevity and
+        <em>
+          transgenerational.
+        
+        </em>
         </p>
         <br />
         <p>

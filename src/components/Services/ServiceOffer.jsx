@@ -60,7 +60,8 @@ const ServiceOffer = () => {
                 From working with previous clients, we observed that social interactions affect learning habits. 
                 <br />
                 <br />
-                  During group coaching, participants learn from the experiences, case studies and scenarios of fellow participants. Our coaching program also fosters industry relationships and collaborations among participants. 
+                  During group coaching, participants learn from the experiences, case studies and scenarios of fellow participants.
+                  Our coaching program also fosters industry relationships and collaborations among participants. 
                   <br />
                   <br />
                   If you learn best in vibrant environments made up of brilliant entrepreneurs, our coaching program was designed just for you.              

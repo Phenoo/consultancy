@@ -30,9 +30,9 @@ const Courses = () => {
       rating: ' 4.5 (126)'
     },{
       id: 4,
-      image: Img2,
-      name: 'Course Coming Soon!',
-      rating: '---'
+      image: Img1,
+      name: 'Business Foundation Matrix (BFM)',
+      rating: '4.5 (126)'
     }
     ]
   return (

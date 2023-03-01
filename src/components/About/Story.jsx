@@ -11,6 +11,7 @@ const Story = () => {
           our story
           </h4>
           <p>
+          In 2018, we launched as a social media management company, providing community management and social page redesign.
           </p>
           <br />
           <p>
