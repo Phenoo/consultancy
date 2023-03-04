@@ -7,49 +7,81 @@ import 'swiper/css/pagination'
 
 
 
-import User1 from '../assets/client.webp'
-import User2 from '../assets/client.webp'
-import User3 from '../assets/client.webp'
-import User4 from '../assets/client.webp'
-
 const News = () => {
+
   const Items = [
     {
       id: 1,
-      name: 'jude nick',
-      svg: User1, 
-      job: 'design',
-      company: 'lampnet'
+      name: 'femi bakes',
+      job: 'Manager',
+      text: `They say clarity comes in motion but I'd say clarity comes with Gold Sycamore. \n
+      My session with Ugochi, Lead Consultant at Gold Sycamore, was eye opening. Before now, I was like a troubled drink in a bottle.\n
+      But Ugochi gently opened up my bottle, made sense of everything in that bottle, and made sure that all my content remained intact during the 
+      unbottling process.\n
+      Gold Sycamore has a way of easing tension while making things clear along the way. I left that session knowing what to do in my business. I'd work
+      with them over and again.
+      `,
+      company: 'renowned voice over artist'
     },
     {
       id: 2,
-      name: 'anita j',
-      svg: User2,  
-      job: 'marketing',
-      company: 'facebook'
+      name: 'doyin olugbade',
+      job: 'baker',
+      text: `Moving to a new country was hard and I wasn't sure how to continue with with my backing business, post-relocation. \n\n
+      Searching for jobs, trying to familiarize myself with the surrondings while hunting for customers was proving difficult. That's when I contacted
+      Gold Sycamore and we had a chat. \n\n
+
+      They assisted me by showing how to attract more customers on social media as well as providing me with other insights in order to gerner more
+      business in that new country. Thankfully, this worked out for me as I now have an established customer base that is growing steadily.
+      `,
+      company: 'beeyond sugar cakes'
     },
     {
       id: 3,
-      name: 'paschol hiks',
-      svg: User3,
-      job: 'maufacturing',
-      company: 'mikano'
+      name: 'michael  mosaku',
+      job: 'founder',
+      text: `I own a honey-producing company and I was looking to learn how to assign roles and put structures in place for my company \n\n
+        	I got on a one-off clarity call with Gold Sycamore in October, and it was one of the most productive 30-minute business conversations i had last
+          year.\n
+          One of the things i took away from that call was clarity on how to define positions and how to assign roles and responsibilities within company.
+      `,
+      company: 'the shine hive'
     },
     {
       id: 4,
-      name: 'timothy spoi',
-      svg: User4,
-      job: 'sales',
-      company: 'airel'
+      name: 'goodness purelight',
+      job: 'founder and creative director',
+      text: `We were making money, but not as much as we wanted. Gold Sycamore helped by providing clarity on the particular products and the service
+        that would increase sales and visibility for my business.
+        With Gold Sycamore's help, we were able to determine the service that clients were most interested in and capitalize on it. Sales skyrocketed
+        after these structures were implemented.
+      `,
+      company: 'purelight bookstore and publishing'
     },
     {
       id: 5,
-      name: 'mike daniel',
-      svg: User1,
-      job: 'sales',
-      company: 'distro ng'
+      name: 'esther onyemaka',
+      job: 'founder',
+      text: `In 2021, we wanted to relaunch our radio station, but we didn't have a process in place, so we reached out to Gold Sycamore, had a clarity
+      call with them, and their lead consultant, Ugochi Obilonu, put me through how to recruit, how to build a work culture, how to maintain the work culture,
+      and also the systems and workflows that the media company neeeded.\n
+      We needed that session more than we knew.
+      `,
+      company: 'the jesus talks radio'
+    },
+    {
+      id: 6,
+      name: 'kenny west',
+      job: 'manager',
+      text: `My music production business had been running unstructured for a long time. A window for funding opportunity finally came through but I needed
+        a business plan.\n
+        I was wowed at first contact. My vision was excellently and professionally captured with every detail in place; plus they delivered in time.\n
+        I stepped up into that pitch session with utmost confidence because of the business plan in my hands. Thank you, Gold Sycamore.
+      `, 
+      company: 'sound of grace studios'
     },
   ]
+
   return (
     <div className="news">
       <section>
@@ -63,23 +95,19 @@ const News = () => {
             loop={true}
             slidesPerView={'auto'}
             pagination={{
-              dynamicBullets: true,
+              // dynamicBullets: true,
             }}
-            className="mySwiper height"
+            className="swiper height"
           >
             {
               Items.map((item) => {
                 return(
                   <SwiperSlide className="swiperslide" key={item.id}>
                     <div className="item review-card">
-                      <div className="image">
-                        <div className="border"></div>
-                        <img src={item.svg} alt={item.name} />
-                      </div>
                         <div className="text">
                           <div>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti vero cupiditate sint exercitationem temporibus voluptates quis quod voluptatum alias, quidem cumque at eum omnis nulla? Illo nesciunt eum harum accusantium quae, possimus laudantium ullam blanditiis quas dignissimos! Quidem, pariatur.
+                              {item.text}
                             </p>
                           </div>
                           <div className="pro">

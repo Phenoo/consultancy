@@ -1,4 +1,4 @@
-import Img1 from '../../assets/story.webp'
+import Img1 from '../../assets/team2.webp'
 const Story = () => {
   return (
     <div className="about-story">

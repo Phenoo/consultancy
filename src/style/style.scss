@@ -47,7 +47,7 @@ li {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 img {
@@ -201,6 +201,7 @@ nav {
     margin: 2rem 0;
     img {
         object-fit: contain;
+        border-radius: 4px;
     }
 }
 
@@ -298,7 +299,7 @@ nav {
 
 .aboutus {
     margin: 4rem 0;
-    .grid{
+    .grid {
         place-items: center;
     }
 }
@@ -352,37 +353,19 @@ nav {
 }
 
 .review-card {
-    width: 100%;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    place-items: center;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     gap: 2rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-    .image {
-        position: relative;
-        width: 330px;
-        .border {
-            // position: absolute;
-            // bottom: 1rem;
-            // width: 180px;
-            // height: 100%;
-            // border: 1px solid $gold;
-            // z-index: -1;
-        }
-        img {
-            width: 90%;
-            padding-left: 2rem;
-            border-radius: 5px;
-            object-fit: cover;
-        }
-    }
+    margin: 0 auto;
     .text {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        text-align: left;
         h4,
         h6 {
             text-transform: capitalize;
@@ -397,12 +380,11 @@ nav {
 }
 
 .swiper {
-    margin-top: 1rem;
-    width: 100%;
-    height: 350px;
+    max-width: 1000px;
+    height: 240px;
     .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
     }
     .swiper-pagination-bullet-active {
         background: $gold;
@@ -727,33 +709,52 @@ footer {
         text-align: center;
     }
     .team-container {
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        margin: 2rem auto;
     }
     .item {
         background: #fff;
         border-radius: 5px;
-        width: 320px;
-        height: 400px;
+        width: 320px;   
+        height: 320px;
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            transform: scale(0.95);
+            transition: all 0.3s ease;
+        }
         .text {
-            padding: 10px;
+            padding: 5px;
         }
         h4 {
             font-size: 1.3rem;
             text-transform: capitalize;
         }
         h6 {
-            margin-top: 10px;
-            text-transform: uppercase;
+            // margin-top: 10px;
+            text-transform: capitalize;
         }
         img {
             height: 250px;
-            object-position: top;
             border-radius: 10px;
-            object-fit: cover;
+            object-fit: contain;
+        }
+        .space-between{
+            align-items: center;
+            flex-direction: row;
+            padding: 10px 0;
+        }
+        svg{
+            cursor: pointer;
+            color: $gold;
+            display: flex;
+            align-items: center;
         }
     }
 }
@@ -1062,6 +1063,7 @@ footer {
         }
     }
 }
+
 .service-modal {
     position: fixed;
     top: 0;
@@ -1077,14 +1079,14 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    button{
+    button {
         margin: 0;
     }
-    .svg{
+    .svg {
         display: flex;
         justify-content: right;
         margin: 0;
-        svg{
+        svg {
             font-size: 1.25rem
         }
     }
@@ -1149,7 +1151,6 @@ footer {
         }
     }
 }
-
 
 .modal {
     position: fixed;
@@ -1276,7 +1277,7 @@ footer {
         width: 90%;
     }
     p {
-        font-size: 1rem;
+        font-size: 14px;
     }
     nav {
         .menulist {
@@ -1363,15 +1364,17 @@ footer {
         }
     }
     .about-page {
-        .about-grid{
+        .about-grid {
             .grid {
                 flex-direction: column;
             }
         }
-
     }
     .headline {
         font-size: 1.75rem;
+    }
+    .teamswiper{
+        height: 400px;
     }
     .mySwiper {
         height: 500px;
@@ -1426,7 +1429,7 @@ footer {
 
 @media screen and (max-width: 500px) {
     p {
-        font-size: 16px;
+        font-size: 12px;
     }
     section {
         width: 95%;
@@ -1455,6 +1458,9 @@ footer {
         }
     }
     .swiper {
+        height: 275px;
+    }
+    .teamswiper{
         height: 400px;
     }
     .fourgrid {
@@ -1464,7 +1470,7 @@ footer {
         margin: 1rem 0;
     }
     .headline {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .blog-card {
         width: 300px;
@@ -1541,6 +1547,13 @@ footer {
         .footer {
             .footer-container {
                 gap: 30px;
+            }
+        }
+    }
+    .team{
+        .item{
+            h4{
+                font-size: 1.15rem;
             }
         }
     }
