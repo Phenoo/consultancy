@@ -5,7 +5,6 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-import { AiOutlineMail } from 'react-icons/ai'
 
 import Img2 from '../../assets/team2.webp'
 import Img1 from '../../assets/team1.webp'
@@ -65,7 +64,7 @@ const Team = () => {
                           {item.title}
                         </h6>
                         <span className=''>
-                          <AiOutlineMail />
+                          {/* <AiOutlineMail /> */}
                         </span>
                       </div>
                     </div>

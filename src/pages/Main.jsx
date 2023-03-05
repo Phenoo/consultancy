@@ -4,7 +4,7 @@ import Article from '../components/Article'
 import Home from '../components/Home'
 import Review from '../components/Review'
 import Offer from '../components/Offer'
-// import Faq from '../components/Faq'
+import Faq from '../components/Faq'
 
 const Main = () => {
   return (
@@ -14,7 +14,7 @@ const Main = () => {
       <Offer />
       <Article />
       <Review />
-      {/* <Faq /> */}
+      <Faq />
     </main>
   )
 }

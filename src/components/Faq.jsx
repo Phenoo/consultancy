@@ -1,43 +1,25 @@
-import React, { useState } from 'react'
-import Accordion from './Accordion'
-
-const data = [
-  {
-    id: 1,
-    title: 'What is [Company Name]?',
-    answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus voluptates alias cupiditate provident illum inventore culpa vel laboriosam, quas itaque. Recusandae ea odio ex voluptatem.`
-  },
-  {
-    id: 2,
-    title: 'What do I need to have a  account?',
-    answer: 'For Nigerian users, phone number and Bank Verification Number (BVN) are required, whereas only a phone number is required for US users.'
-  },
-  {
-    id: 3,
-    title: 'How do I send money to a [Comany Name] user?',
-    answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus voluptates alias cupiditate provident illum inventore culpa vel laboriosam, quas itaque. Recusandae ea odio ex voluptatem.`
-
-  },
-  {
-    id: 4,
-    title: 'How do I transfer money to a bank account?',
-    answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus voluptates alias cupiditate provident illum inventore culpa vel laboriosam, quas itaque. Recusandae ea odio ex voluptatem.`
-
-  },
-  {
-    id: 5,
-    title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit?',
-    answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus voluptates alias cupiditate provident illum inventore culpa vel laboriosam, quas itaque. Recusandae ea odio ex voluptatem.`
-  },
-]
+import React from 'react'
+import Team from '../assets/engineer.svg'
 
 const Faq = () => {
-  const [ask, setAsk] = useState(data)
 
   return (
     <section>
-      <div className='faq'> 
-        <div className='center'>
+      <div className='engine'>
+          <img src={Team} alt='team' />
+          <h4>
+            Still have questions?
+          </h4>
+          <p>
+            Please chat our friendly team.
+          </p>
+          <button className='btn btn-blue'>
+            <a href="mailto:hello@goldsycamore.com">
+              Send a message
+            </a>
+          </button>
+        </div>
+        {/* <div className='center'>
           <h4 className='headline'>
             <span>FAQs</span> (Frequently asked questions)
           </h4>
@@ -53,8 +35,7 @@ const Faq = () => {
               return <Accordion key={question.id} {...question} set={setAsk} />
             })
           }
-        </ul>
-      </div>
+        </ul> */}
     </section>
   )
 }

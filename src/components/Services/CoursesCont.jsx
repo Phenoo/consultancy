@@ -44,7 +44,7 @@ const CoursesCont = () => {
             loop={true}
             slidesPerView={'auto'}
             pagination={{
-              dynamicBullets: true,
+              // dynamicBullets: false,
             }}
             className="mySwiper teamswiper"
           >
