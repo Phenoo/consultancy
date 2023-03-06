@@ -5,13 +5,13 @@ import Img2 from '../assets/courses.webp'
 const Offer = () => {
   const data = [{
     id: 1,
-    icon: <img src='https://source.unsplash.com/vbxyFxlgpjM' alt="item" />,
+    icon: <img src='https://images.pexels.com/photos/3894378/pexels-photo-3894378.jpeg?auto=compress&cs=tinysrgb&w=600' alt="item" />,
     name: 'trainings',
     desc: 'With our trainings, improve the leadership, marketing, and customer experience skills of your team.'
   },
   {
     id:2,
-    icon: <img src='https://source.unsplash.com/46bom4lObsA' alt="item" />,
+    icon: <img src='https://images.pexels.com/photos/3894383/pexels-photo-3894383.jpeg?auto=compress&cs=tinysrgb&w=600' alt="item" />,
     name: 'coaching',
     desc: 'We connect you to a seasoned business mentor or coach who has useful resources that are relevant to you.'
   },
@@ -22,7 +22,7 @@ const Offer = () => {
     desc: 'We have courses that suits your needs whether you are a new or aspiring entrepreneur or an established one. '
   },{
     id: 4,
-    icon:  <img src='https://source.unsplash.com/IgUR1iX0mqM' alt='offer' />,
+    icon: <img src='https://img.freepik.com/premium-photo/two-business-partners-discussing-about-their-work_216356-107.jpg?size=626&ext=jpg&ga=GA1.2.1697665057.1678095998&semt=ais' alt='offer' />,
     name: 'consultation',
     desc: 'Get 1:1 expert advice and strategies for implementing solutions for your business challenges.'
   }

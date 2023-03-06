@@ -19,7 +19,7 @@ const ServiceOffer = () => {
             </h4>
             <div className="grid">
               <div className='order-1'>
-                <img src='https://source.unsplash.com/vbxyFxlgpjM' alt="item" />
+              <img src='https://images.pexels.com/photos/3894378/pexels-photo-3894378.jpeg?auto=compress&cs=tinysrgb&w=600' alt="item" />
               </div>
               <div className='order-2'>
                 <p>
@@ -70,7 +70,7 @@ const ServiceOffer = () => {
                 </p>
               </div>
               <div className='order-1'>
-                <img src='https://source.unsplash.com/46bom4lObsA' alt="item" />
+                <img src='https://images.pexels.com/photos/3894383/pexels-photo-3894383.jpeg?auto=compress&cs=tinysrgb&w=600' alt="item" />
               </div>
             </div>
           </section>
@@ -82,7 +82,7 @@ const ServiceOffer = () => {
             </h4>
             <div className='grid'>
               <div className=''>
-                <img src='https://source.unsplash.com/IgUR1iX0mqM' alt='offer' /> 
+                <img src='https://img.freepik.com/premium-photo/two-business-partners-discussing-about-their-work_216356-107.jpg?size=626&ext=jpg&ga=GA1.2.1697665057.1678095998&semt=ais' alt='offer' /> 
               </div>
               <div className=''>
                 <p>
