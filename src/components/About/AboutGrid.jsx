@@ -27,7 +27,7 @@ const AboutGrid = () => {
               </p>
               <br />
               <p>
-              We are not a company that “will give you the advice and bolt”. We sit tgether with you to develop the solutions and guide you towards the success you seek. While we don’t do the work for you, we ensure you aren’t doing it by yourself either.
+              We are not a company that will give you the advice and bolt. We sit together with you to develop the solutions and guide you towards the success you seek. While we don’t do the work for you, we ensure you aren’t doing it by yourself either.
               </p>
               <br />
               <p>

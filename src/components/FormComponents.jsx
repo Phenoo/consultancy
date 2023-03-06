@@ -8,7 +8,6 @@ const FormComponents = () => {
   const [name, setName] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [serviceName, setServiceName] = useState("");
-  const [size, setSize] = useState("");
 
   const formRef = useRef()
 
@@ -27,7 +26,6 @@ const FormComponents = () => {
       setName("")
       setEmail("")
       setCompanyName("")
-      setSize("")
       setServiceName("")
   }
 
@@ -91,17 +89,6 @@ const FormComponents = () => {
                   value={companyName}
                   onChange={(e) => setCompanyName(e.target.value)}
                   required
-              />
-            </div>
-            <div className="form-input">
-              <label>
-                Business Size
-              </label>
-              <input type="text" placeholder="Small or 4"
-                name="size"
-                value={size}
-                onChange={(e) => setSize(e.target.value)}
-                required
               />
             </div>
             <div className="form-input">

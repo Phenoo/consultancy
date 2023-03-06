@@ -69,7 +69,7 @@ const Navigation = () => {
             </button>
             <button className='mobile' onClick={() => setNavbar(!navbar)}>
               {
-                navbar ? <FaTimes /> : <FaBars />
+                navbar ? <FaTimes color='black' /> : <FaBars color='black'/>
               }
               
             </button>

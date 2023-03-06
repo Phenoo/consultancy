@@ -45,7 +45,7 @@ const ServiceOffer = () => {
               courses
             </h4>
             <p>
-            Our courses are simple to execute and comprehend. Although it might not have the individualized attention that a consulting session offers, courses provide solutions to more general, everyday business problems
+            Our courses are simple to execute and comprehend. Although it might not have the individualized attention that a consulting session offers, courses provide solutions to more general, everyday business problems.
             </p>
             <CoursesCont />
           </section>
@@ -63,7 +63,7 @@ const ServiceOffer = () => {
                 <br />
                 <br />
                   During group coaching, participants learn from the experiences, case studies and scenarios of fellow participants.
-                  Our coaching program also fosters industry relationships and collaborations among participants. 
+                  Our coaching program also fosters industry relationships and collaborations among participants.
                   <br />
                   <br />
                   If you learn best in vibrant environments made up of brilliant entrepreneurs, our coaching program was designed just for you.              
@@ -96,6 +96,7 @@ const ServiceOffer = () => {
                   <br />
                   <br />
                   Additionally, there is a reason why some business owners will always prefer customized advice. If you are a 1:1, focus-on-me kinda business owner, we have been waiting on you. 
+                  <br />
                   <br />
                   Get clarity and advance your business right away!
                 </p>

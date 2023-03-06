@@ -45,6 +45,7 @@ const  Modal = ({setModal, modal}) => {
                   required
                   />
               </div>
+              
               <div className='btn-div flex'>
               <button onClick={() => setModal(!modal)} className=' white'>
                   cancel

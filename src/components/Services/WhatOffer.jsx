@@ -48,15 +48,11 @@ const WhatOffer = () => {
         </p>
         <br />
         <p>
-        In running any business, think sustainability, longevity and
-        <em>
-          transgenerational.
-        
-        </em>
+        In running any business, think <strong>sustainability</strong>, <strong>longevity</strong>  and <strong>transgenerational</strong>.
         </p>
         <br />
         <p>
-        You are in business for a reason and your WHY must always inform the business actions you take. 
+        You are in business for a reason and your <strong>WHY</strong>  must always inform the business actions you take. 
         </p>
         <br />
         <p>
