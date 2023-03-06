@@ -370,7 +370,6 @@ nav {
         h6 {
             text-transform: capitalize;
         }
-
         .pro {
             margin-top: 16px;
         }
@@ -1066,7 +1065,7 @@ footer {
     }
     .modal-container {
         position: relative;
-        width: 490px;
+        width: 470px;
         height: auto;
         margin: 0 auto;
         background: #111111;
@@ -1143,7 +1142,7 @@ footer {
     .modal-container {
         position: relative;
         width: 490px;
-        height: 400px;
+        min-height: 400px;
         margin: 0 auto;
         background: #111111;
         color: #fff;
@@ -1166,11 +1165,16 @@ footer {
             label {
                 color: #fff;
             }
-            input {
+            input,
+            select {
                 border-radius: 4px;
                 width: 92%;
                 padding: 1rem;
                 background: #fff;
+                outline: none;
+            }
+            select {
+                width: 100%;
             }
         }
     }
@@ -1198,6 +1202,11 @@ footer {
             margin-top: 2rem;
         }
     }
+}
+
+option {
+    text-transform: capitalize;
+    padding: 1rem;
 }
 
 .single-page {
