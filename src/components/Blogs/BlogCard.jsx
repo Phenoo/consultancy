@@ -4,6 +4,14 @@ import {urlFor} from '../../lib/client'
 import { Link } from 'react-router-dom'
 
 const BlogCard = ({post}) => {
+  const scrollTo = (id) => {
+    let element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+  }
   const formatDate = Moment(post.publishedAt).format("MMM Do, YYYY.")
 
   return (
@@ -22,7 +30,7 @@ const BlogCard = ({post}) => {
           {post.description.substring(0, 110)}
         </p>
         <br />
-        <span>
+        <span onClick={() => scrollTo('nav')}>
           <Link to={`/blog/${post.slug.current}`}>
             read more
           </Link>

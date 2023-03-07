@@ -54,7 +54,7 @@ const Single = () => {
                   </div>
                   <div>
                     <h6 className='author'>
-                      by  Ukusare Faith 
+                      By Ugochi Obilonu
                     </h6>
 
                   </div>
@@ -62,7 +62,7 @@ const Single = () => {
                   <article>
                     <BlockContent 
                       blocks={item.body}
-                      projectId="ww69fva0"
+                      projectId="lsmt8btv"
                       dataset="production"
                     />
                   </article>

@@ -407,11 +407,11 @@ nav {
     gap: 10px;
     align-items: center;
     text-align: center;
-    width: 100%;
+    max-width: 800px;
     background: rgba(243, 192, 26, 0.3);
     padding: 10px 0 1rem;
     border-radius: 10px;
-    margin: 2rem 0;
+    margin: 2rem auto;
     img {
         width: 200px;
         height: 100px;
@@ -1315,7 +1315,7 @@ option {
         }
     }
     .home {
-        height: 410px;
+        height: 450px;
         h2 {
             font-size: 28px;
             width: 90%;
