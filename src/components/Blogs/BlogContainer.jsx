@@ -16,7 +16,7 @@ const BlogContainer = () => {
   }, [])
 
   return (
-    <div className="blog-container">
+    <div className="blog-container" id='blog-cont'>
       <h4 className="headline">
         recent articles
       </h4>

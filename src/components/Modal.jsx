@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { useState } from 'react'
 import { CgDanger } from 'react-icons/cg'
+
+import emailjs from '@emailjs/browser'
+
 
 const  Modal = ({setModal, modal}) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
+
+  const formRef = useRef()
+
+
   const data = [
     {
     id: 1,
@@ -24,11 +31,18 @@ const  Modal = ({setModal, modal}) => {
   ]
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(course)
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      formRef.current,
+      process.env.REACT_APP_USER_ID)
+        .then(result => setModal(!modal),
+          alert('Email Sent'),
+        error => alert('Please Try Again')
+        );
     setName("")
     setEmail("");
     setCourse("");
-    setModal(!modal);
   }
   return (
     <div className="modal">
@@ -45,11 +59,12 @@ const  Modal = ({setModal, modal}) => {
             </p>
           </div>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} ref={formRef}>
               <div className="form-input">
                 <label>Full Name</label>
                 <input type="text" placeholder='Enter Your Full Name'
                   value={name}
+                  name="full_name"
                   onChange={(e) => setName(e.target.value)}
                   required
                   
@@ -59,6 +74,7 @@ const  Modal = ({setModal, modal}) => {
                 <label>Email Address</label>
                 <input type="email" placeholder='Enter Your Email'
                   value={email}
+                  name="email"
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   />
@@ -66,9 +82,13 @@ const  Modal = ({setModal, modal}) => {
 
               <div className="form-input">
                 <label>What course do you want? </label>
-                <select onChange={event => setCourse(event.target.value)} required>
+                <select onChange={event => setCourse(event.target.value)}
+                  name="course_name"
+                required>
                 {data.map((item, index) => (
-                    <option value={`${item.name}`} key={index}>{item.name}</option> 
+                    <option value={`${item.name}`} key={index}
+                      name="course_name">
+                        {item.name}</option> 
                   )
                   )}
                   </select>

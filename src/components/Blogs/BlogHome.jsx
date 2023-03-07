@@ -1,6 +1,14 @@
 import React from 'react'
 
 const BlogHome = () => {
+  const scrollTo = (id) => {
+    let element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+  }
   return (
     <div className="blog-home home">
       <section>
@@ -8,7 +16,7 @@ const BlogHome = () => {
           <h2>
             stay updated with our latest contents
           </h2>
-          <button className="button">
+          <button className="button" onClick={() => scrollTo('blog-cont')}>
               get started
           </button>
         </div>

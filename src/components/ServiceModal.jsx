@@ -13,25 +13,20 @@ const  ServiceModal = ({modal, setModal}) => {
 
   const handleSubmit = (e) => {
       e.preventDefault();
-
-      
-      
       emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_TEMP_ID,
         formRef.current,
         process.env.REACT_APP_USER_ID)
-          .then(result => console.log('yes'),
+          .then(result => alert('Email Sent'),
             setModal(!modal),
-            alert('Sent')
-          ,
+          
           error => alert('Please Try Again')
           );
           setName("")
           setEmail("")
           setCompanyName("")
           setServiceName("")
-  
   }
 
   return (

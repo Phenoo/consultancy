@@ -9,6 +9,14 @@ import Img1 from '../assets/courses.webp'
 
 const Courses = () => {
   const [modal, setModal] = useState(false)
+  const scrollTo = (id) => {
+    let element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+  }
   
     const data = [
       {
@@ -47,7 +55,7 @@ const Courses = () => {
           <h2>
             Get Solutions To General, Everyday Business Problems
           </h2>
-          <button className="button">
+          <button className="button" onClick={() => scrollTo('courses-cont')}>
               get started
           </button>
         </div>
@@ -62,7 +70,7 @@ const Courses = () => {
         </div>
         <Search place='Search courses' />
       </div>
-      <div className="courses-cont margin">
+      <div className="courses-cont margin" id='courses-cont'>
             <div className="wrap">
               {
                 data.map(item => {

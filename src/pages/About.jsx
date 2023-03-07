@@ -15,7 +15,7 @@ const About = () => {
         </title>
       </Helmet>
       <AboutHome />
-      <section>
+      <section id='about-cont'>
         <div className="who">
           <button className="tag">
             who are we?

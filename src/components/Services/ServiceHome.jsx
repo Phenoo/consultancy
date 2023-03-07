@@ -3,6 +3,7 @@ import ServiceModal from '../ServiceModal'
 
 const ServiceHome = () => {
   const [modal, setModal] = useState(false);
+  
 
   return (
     <div className="home service-home">
