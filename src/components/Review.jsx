@@ -15,7 +15,7 @@ const News = () => {
       text: `They say clarity comes in motion but I'd say clarity comes with Gold Sycamore. \n
       My session with Ugochi, Lead Consultant at Gold Sycamore, was eye opening. Before now, I was like a troubled drink in a bottle.\n
       But Ugochi gently opened up my bottle, made sense of everything in that bottle, and made sure that all my content remained intact during the 
-      unbottling process.\n
+      unbottling process.
       Gold Sycamore has a way of easing tension while making things clear along the way. I left that session knowing what to do in my business. I'd work
       with them over and again.
       `,
