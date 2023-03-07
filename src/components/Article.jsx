@@ -8,7 +8,6 @@ const Article = () => {
     const query = '*[_type == "post"]';
     const post = await client.fetch(query);
     setPosts(post);
-    console.log(post);
   }
   useEffect(() => {
     fetchData();
